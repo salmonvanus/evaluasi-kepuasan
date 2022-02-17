@@ -1,0 +1,27 @@
+STAFF E-GOV	
+username : nourswitspulu18
+password : Nourswitspulu123
+
+KEPALA E-GOV
+username : johnrembet
+password : Johnrembet123
+
+STAFF PERSANDIAN
+username : yandessihombing
+password : yandes123
+
+KEPALA PERSANDIAN : 
+username : rollykaramoj
+password : rollykaramoj111
+
+STAFF KOMINFO
+username : hiskiamangenggek
+password : Hiskia123
+
+KEPALA KOMINFO 
+username : kabid_kominfo
+password : KbdKominfo123
+
+KADIS
+username : jetipulu
+password : Jetipulu123

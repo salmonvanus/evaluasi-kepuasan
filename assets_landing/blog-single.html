@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Blog Single</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="AuCreative theme tempalte">
+	<meta name="author" content="AuCreative">
+	<meta name="keywords" content="AuCreative theme template">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/dist/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/color.css">
+<!--===============================================================================================-->
+</head>
+<body class="animsition restyle-index">
+	
+	<header>
+		<!-- Header desktop -->
+		<div class="container-menu-desktop">
+			<div class="top-bar bg-main">
+				<div class="container">
+					<div class="content-topbar">
+						<div class="left-top-bar">
+							<a href="#">Search</a>
+							<a href="#">About</a>
+							<a href="#">Blog</a>
+							<a href="#">FAQ</a>
+						</div>
+
+						<div class="right-top-bar">
+							<span>
+								<i class="icon_phone" aria-hidden="true"></i>
+								<span>1-800-123-6889</span>
+							</span>
+
+							<span>
+								<i class="icon_pin" aria-hidden="true"></i>
+								<span>8th floor, 379 Hudson St, New York</span>
+							</span>
+
+							<span>
+								<i class="icon_clock" aria-hidden="true"></i>
+								<span>09:30 am – 06:00 pm</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wrap-menu-desktop">
+				<div class="limiter-menu-desktop">
+					
+					<!-- Logo desktop -->		
+					<a href="index.html" class="logo">
+						<img src="images/icons/logo.png" alt="IMG-LOGO">
+					</a>
+
+					<!-- Menu desktop -->
+					<div class="menu-desktop">
+						<ul class="main-menu">
+							<li>
+								<a href="index.html">Home</a>
+								<ul class="sub-menu">
+									<li><a href="index.html">Homepage V1</a></li>
+									<li><a href="home-02.html">Homepage V2</a></li>
+									<li><a href="home-03.html">Homepage V3</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="course-list.html">Courses</a>
+								<ul class="sub-menu">
+									<li><a href="course-list.html">Course List</a></li>
+									<li><a href="course-grid.html">Course Grid</a></li>
+									<li><a href="course-detail.html">Course Detail</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="about-team.html">Teachers</a>
+							</li>
+
+							<li>
+								<a href="#">Pages</a>
+								<ul class="sub-menu">
+									<li><a href="photo-gallery.html">Photo Gallery</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="blog.html">Blog</a>
+								<ul class="sub-menu">
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="blog-single.html">Blog Single</a></li>
+								</ul>
+							</li>
+
+							<li class="respon-sub-menu">
+								<a href="about.html">About</a>
+								<ul class="sub-menu">
+									<li><a href="about.html">About</a></li>
+									<li><a href="about-team.html">About Team Member</a></li>
+								</ul>
+							</li>
+
+							<li class="respon-sub-menu">
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					
+					<!-- Social desktop -->
+					<div class="social">
+						<a href="#"><i class="fa fa-facebook m-l-13" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+
+
+		<!-- Header Mobile -->
+		<div class="wrap-header-mobile">
+			<!-- Logo moblie -->		
+			<a href="index.html" class="logo-mobile">
+				<img src="images/icons/logo.png" alt="IMG-LOGO">
+			</a>
+			
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</div>
+				
+		</div>
+
+
+		<!-- Menu Mobile -->
+		<div class="menu-mobile">
+			<ul class="topbar-mobile">
+				<li class="bo1-b p-t-8 p-b-8">
+					<div class="left-top-bar p-l-7">
+						<a href="#">Search</a>
+						<a href="#">About</a>
+						<a href="#">Blog</a>
+						<a href="#">FAQ</a>
+					</div>
+				</li>
+
+				<li class="right-top-bar bo1-b p-t-8 p-b-8">
+					<span>
+						<i class="icon_phone" aria-hidden="true"></i>
+						<span>1-800-123-6889</span>
+					</span>
+				</li>
+
+				<li class="right-top-bar bo1-b p-t-8 p-b-8">
+					<span>
+						<i class="icon_pin" aria-hidden="true"></i>
+						<span>8th floor, 379 Hudson St, New York</span>
+					</span>
+				</li>
+
+				<li class="right-top-bar bo1-b p-t-8 p-b-8">
+					<span>
+						<i class="icon_clock" aria-hidden="true"></i>
+						<span>09:30 am – 06:00 pm</span>
+					</span>
+				</li>
+			</ul>
+
+			<ul class="main-menu-m bg-main">
+				<li class="bg-main">
+					<a href="index.html">Home</a>
+					<ul class="sub-menu-m">
+						<li><a href="index.html">Homepage V1</a></li>
+						<li><a href="home-02.html">Homepage V2</a></li>
+						<li><a href="home-03.html">Homepage V3</a></li>
+					</ul>
+					<span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+				</li>
+
+				<li class="bg-main">
+					<a href="course-list.html">Courses</a>
+					<ul class="sub-menu-m">
+						<li><a href="course-list.html">Course List</a></li>
+						<li><a href="course-grid.html">Course Grid</a></li>
+						<li><a href="course-detail.html">Course Detail</a></li>
+					</ul>
+					<span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+				</li>
+
+				<li class="bg-main">
+					<a href="about-team.html">Teachers</a>
+				</li>
+
+				<li class="bg-main">
+					<a href="#">Pages</a>
+					<ul class="sub-menu-m">
+						<li><a href="photo-gallery.html">Photo Gallery</a></li>
+					</ul>
+					<span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+				</li>
+
+				<li class="bg-main">
+					<a href="blog.html">Blog</a>
+					<ul class="sub-menu-m">
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="blog-single.html">Blog Single</a></li>
+					</ul>
+					<span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+				</li>
+
+				<li class="bg-main">
+					<a href="about.html">About</a>
+					<ul class="sub-menu-m">
+						<li><a href="about.html">About</a></li>
+						<li><a href="about-team.html">About Team Member</a></li>
+					</ul>
+					<span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+				</li>
+
+				<li class="bg-main">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Breadcrumb -->
+	<div class="bg1 p-t-29 p-b-29">
+		<div class="container">
+			<div class="flex-w">
+				<span>
+					<a href="index.html" class="s-txt21 hov-color-main trans-02">
+						<i class="fa fa-home"></i>
+						Home
+					</a>
+					<span class="s-txt21 p-l-6 p-r-9">/</span>
+				</span>
+
+				<span>
+					<a href="blog.html" class="s-txt21 hov-color-main trans-02">
+						News
+					</a>
+					<span class="s-txt21 p-l-6 p-r-9">/</span>
+				</span>
+				
+				<span>
+					<span class="s-txt21">
+						Trainee licence option with 20 hours training
+					</span>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Content page -->
+	<section class="p-t-65 p-b-45">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-lg-9 p-b-50">
+					<div class="p-r-40 p-r-0-lg">
+						<!-- Content Detail -->
+						<div class="p-b-48">
+							<h3 class="m-txt21 p-b-25">
+								Trainee licence option with 20 hours training
+							</h3>
+
+							<div class="flex-w flex-m s-txt29 bo2-b p-b-15">
+								<span>
+									by Tammy Ramos
+									<span class="m-l-4 m-r-9">|</span>
+								</span>  
+
+								<span>
+									May 30, 2018
+									<span class="m-l-4 m-r-9">|</span>
+								</span> 
+
+								<span>
+									Driving
+									<span class="m-l-4 m-r-9">|</span>
+								</span>  
+
+								<span>
+									3 Comments
+								</span>
+							</div>
+
+							<div class="wrap-pic-w pos-relative m-t-30 m-b-40">
+								<img src="images/icons/video-16-9.jpg" alt="IMG" class="op-00">
+								<div class="size-full ab-t-l">
+									<iframe class="size-full" src="https://www.youtube.com/embed/bK36RQxl0F0?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+								</div>
+							</div>
+							
+							<p class="s-txt2 p-b-25">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget mi sem. Nulla facilisi. Sed ultricies eros a nibh tempus, in sodales mi vestibulum. Nullam quis dui ac nisl ultrices euismod et sit amet urna. Morbi semper sapien quis ex tempor, sit amet scelerisque eros rhoncus. Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae. 
+							</p>
+
+							<ul class="p-l-20 p-b-20">
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit
+									</span>
+								</li>
+
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										Fusce dignissim tortor et elit dapibus cursus. Aenean lorem ligula, egestas et magna
+									</span>
+								</li>
+
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										Nunc sed vulputate velit quis luctus lectus
+									</span>
+								</li>
+
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										Aenean lectus mauris, fermentum sed turpis eget, condimentum molestie leo
+									</span>
+								</li>
+
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										Proin suscipit, justo sit amet tristique ultrices, ex magna efficitur lectus, at rutrum dui ex id nulla
+									</span>
+								</li>
+
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										nteger in elementum risus. Fusce nec metus leo. 
+									</span>
+								</li>
+
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										Quisque vel pretium neque. Proin hendrerit, ante molestie eleifend mattis, tellus nunc elementum felis
+									</span>
+								</li>
+
+								<li class="flex-w s-txt2 p-b-5">
+									<span class="w-size13">●</span>
+
+									<span class="w-size14">
+										Sollicitudin sapien magna quis est. Quisque non vestibulum libero
+									</span>
+								</li>
+							</ul>
+
+							<p class="s-txt2 p-b-25">
+								Nulla feugiat nulla mi, a aliquam arcu condimentum in. Cras pulvinar ac odio quis efficitur. Pellentesque commodo sapien ac arcu ultrices dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur eu arcu at sem lobortis rhoncus sed at dolor.
+							</p>
+
+							<div class="bo5-l p-l-53 m-t-7 m-b-33 p-t-14 p-b-13">
+								<p class="m-txt22 p-b-15">
+									Cras nec odio facilisis, suscipit sem sit amet, tincidunt turpis. Praesent diam eros, consectetur ac viverra vitae, imperdiet ut est. 
+								</p>
+
+								<span class="s-txt29">
+									Kevin Nguyen, Envato
+								</span>
+							</div>
+
+							<p class="s-txt2 p-b-25">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi arcu, tempor ut dictum id, dapibus in dui. Mauris nunc nunc, faucibus ac hendrerit vel, luctus nec mauris. 
+							</p>
+
+							
+							<div class="flex-w flex-sb-m p-b-40">
+								<div class="flex-w p-t-10 p-b-10 p-r-20">
+									<a href="#" class="dis-block bo6 s-txt5 hov4 trans-03 p-t-6 p-b-7 p-l-15 p-r-15 m-r-5 m-b-3 m-t-3">
+										driving
+									</a>
+
+									<a href="#" class="dis-block bo6 s-txt5 hov4 trans-03 p-t-6 p-b-7 p-l-15 p-r-15 m-r-5 m-b-3 m-t-3">
+										car
+									</a>
+
+									<a href="#" class="dis-block bo6 s-txt5 hov4 trans-03 p-t-6 p-b-7 p-l-15 p-r-15 m-r-5 m-b-3 m-t-3">
+										licence
+									</a>
+								</div>
+
+								<div class="flex-w flex-m p-t-10 p-b-10 rs1-share-item">
+									<span class="s-txt26 p-r-17 m-t-4 m-b-4">
+										Share
+									</span>
+
+									<a href="#" class="flex-c-m bg1 size14 bo-rad-3 bo2 color7 hov-bg-main hov-color-white trans-03 m-r-5 m-t-4 m-b-4">
+										<i class="fa fa-facebook fs-18"></i>
+									</a>
+
+									<a href="#" class="flex-c-m bg1 size14 bo-rad-3 bo2 color7 hov-bg-main hov-color-white trans-03 m-r-5 m-t-4 m-b-4">
+										<i class="fa fa-twitter fs-18"></i>
+									</a>
+
+									<a href="#" class="flex-c-m bg1 size14 bo-rad-3 bo2 color7 hov-bg-main hov-color-white trans-03 m-r-5 m-t-4 m-b-4">
+										<i class="fa fa-google-plus fs-18"></i>
+									</a>
+
+									<a href="#" class="flex-c-m bg1 size14 bo-rad-3 bo2 color7 hov-bg-main hov-color-white trans-03 m-r-5 m-t-4 m-b-4">
+										<i class="fa fa-linkedin fs-18"></i>
+									</a>
+
+									<a href="#" class="flex-c-m bg1 size14 bo-rad-3 bo2 color7 hov-bg-main hov-color-white trans-03 m-t-4 m-b-4">
+										<i class="fa fa-plus fs-18"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="bg1 flex-w p-l-30 p-r-30 p-t-30 p-b-40">
+								<div class="wrap-pic-w w-size15 m-r-30 m-b-10">
+									<img src="images/avatar-01.jpg" alt="IMG">
+								</div>
+
+								<div class="w-size16 w-full-sm m-b-10">
+									<span class="m-txt16">
+										Tammy Ramos
+									</span>
+
+									<p class="s-txt2 w-size17 p-t-9">
+										Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. 
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Comment -->
+						<div class="bo2-b">
+							<div class="m-txt27 bo2-b p-b-20 m-b-15">
+								3 comments
+							</div>
+							
+							<!-- comment item -->
+							<div class="flex-w p-b-10 p-t-25">
+								<div class="wrap-pic-w w-size11 m-r-30 m-b-10">
+									<img src="images/avatar-02.jpg" alt="IMG">
+								</div>
+
+								<div class="w-size18 w-full-sm m-b-10">
+									<p class="s-txt2 p-b-10">
+										Nunc risus ex, tempus quis purus ac, tempor consequat ex. Vivamus sem magna, maximus at est id, maximus aliquet nunc. Suspendisse lacinia velit a eros porttitor, in interdum ante faucibus.
+									</p>
+									
+									<span class="flex-w">
+										<span class="s-txt28 m-r-20">
+											Arthur Reyes  - June 25, 2018
+										</span>
+
+										<a href="#" class="s-txt30 hov-color-main trans-03">
+											<i class="fa fa-share m-r-2"></i>
+											Reply
+										</a>
+									</span>
+								</div>
+							</div>
+
+							<!-- comment child-->
+							<div class="m-l-100 bo2-tb p-t-5">
+								<!-- item -->
+								<div class="flex-w p-t-25 p-b-10">
+									<div class="wrap-pic-w w-size11 m-r-30 m-b-10">
+										<img src="images/avatar-03.jpg" alt="IMG">
+									</div>
+
+									<div class="w-size18 w-full-sm m-b-10">
+										<p class="s-txt2 p-b-10">
+											Nullam ipsum urna, dapibus sed justo sed, imperdiet malesuada commodo
+										</p>
+
+										<span class="flex-w">
+											<span class="s-txt28 m-r-20">
+												Shirley Campbell - June 25, 2018
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- comment item -->
+							<div class="flex-w p-b-10 p-t-25">
+								<div class="wrap-pic-w w-size11 m-r-30 m-b-10">
+									<img src="images/avatar-04.jpg" alt="IMG">
+								</div>
+
+								<div class="w-size18 w-full-sm m-b-10">
+									<p class="s-txt2 p-b-10">
+										Donec sollicitudin nisi sed eros elementum, non vestibulum quam convallis. Curabitur bibendum magna at nisl hendrerit, et tempus metus facilisis. Praesent augue tellus, euismod id posuere eget, gravida id dolor
+									</p>
+									
+									<span class="flex-w">
+										<span class="s-txt28 m-r-20">
+											Sara Ellis - May 25, 2018
+										</span>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Leave a comment -->
+						<div class="p-t-52">
+							<div class="m-txt27 p-b-15">
+								Leave a Comment
+							</div>
+
+							<p class="s-txt2 p-b-30">
+								You must be logged in to post a comment.
+							</p>
+							
+							<form class="flex-w flex-sb">
+								<div class="w-full m-b-10">
+									<textarea class="s-txt31 size22 cl-ph-1 bo6 input-focus-1 p-l-18 p-r-18 p-t-12" name="comment" placeholder="Comment..."></textarea>
+								</div>
+
+								<div class=" size23 w-full-lg m-b-10">
+									<input class="s-txt31 size-full cl-ph-1 bo6 input-focus-1 p-l-18 p-r-18" type="text" name="name" placeholder="Name *">
+								</div>
+
+								<div class=" size23 w-full-lg m-b-10">
+									<input class="s-txt31 size-full cl-ph-1 bo6 input-focus-1 p-l-18 p-r-18" type="text" name="email" placeholder="Email *">
+								</div>
+
+								<div class=" size23 w-full-lg m-b-10">
+									<input class="s-txt31 size-full cl-ph-1 bo6 input-focus-1 p-l-18 p-r-18" type="text" name="website" placeholder="Website">
+								</div>
+
+								
+								<div class="p-t-20">
+									<!-- Button -->
+									<button class="btn-drive m-txt15 size24 bg2">
+										Post Comment
+									</button>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-3 p-b-50">
+					<!-- Sidebar -->
+					<div class="p-t-5">
+						<!-- search -->
+						<div class="where1-parent w-full">
+							<input class="size20 bo2 s-txt2 p-l-19 p-r-55" type="text" name="search" placeholder="Search">
+							<button class="flex-c-m size21 bg4 where1 fs-16 color-white hov-bg-main trans-03">
+								<i class="icon_search"></i>
+							</button>
+						</div>
+						
+						<!-- Categories -->
+						<div class="p-t-54">
+							<h4 class="m-txt24 p-b-34">
+								Categories
+							</h4>
+
+							<ul class="bo2-t">
+								<li class="bo2-b p-t-9 p-b-8">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										Design/Build
+									</a>
+								</li>
+
+								<li class="bo2-b p-t-9 p-b-8">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										General Construction
+									</a>
+								</li>
+
+								<li class="bo2-b p-t-9 p-b-8">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										Portable/Modular Buildings
+									</a>
+								</li>
+
+								<li class="bo2-b p-t-9 p-b-8">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										Construction Management
+									</a>
+								</li>
+
+								<li class="bo2-b p-t-9 p-b-8">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										Demolition
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Most Popular -->
+						<div class="p-t-54">
+							<h4 class="m-txt24 p-b-34">
+								Most Popular
+							</h4>
+
+							<ul>
+								<li class="flex-t p-b-26">
+									<a href="#" class="dis-block wrap-pic-w w-size11 overlay1 m-r-17">
+										<img src="images/popular-01.jpg" alt="IMG">
+									</a>
+
+									<div class="w-size12 flex-col">
+										<a href="#" class="s-txt27 hov-color-main trans-03 p-b-13">
+											Established online e-learn-ing hub
+										</a>
+
+										<span class="s-txt28">
+											3 days ago
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-t p-b-26">
+									<a href="#" class="dis-block wrap-pic-w w-size11 overlay1 m-r-17">
+										<img src="images/popular-02.jpg" alt="IMG">
+									</a>
+
+									<div class="w-size12 flex-col">
+										<a href="#" class="s-txt27 hov-color-main trans-03 p-b-13">
+											Renewable energy companies
+										</a>
+
+										<span class="s-txt28">
+											July 2, 2017
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-t p-b-26">
+									<a href="#" class="dis-block wrap-pic-w w-size11 overlay1 m-r-17">
+										<img src="images/popular-03.jpg" alt="IMG">
+									</a>
+
+									<div class="w-size12 flex-col">
+										<a href="#" class="s-txt27 hov-color-main trans-03 p-b-13">
+											Dedicated support team, local trainer and buddying
+										</a>
+
+										<span class="s-txt28">
+											May 28, 2017
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-t p-b-26">
+									<a href="#" class="dis-block wrap-pic-w w-size11 overlay1 m-r-17">
+										<img src="images/popular-04.jpg" alt="IMG">
+									</a>
+
+									<div class="w-size12 flex-col">
+										<a href="#" class="s-txt27 hov-color-main trans-03 p-b-13">
+											Trainee licence option with 20 hours training
+										</a>
+
+										<span class="s-txt28">
+											May 25, 2017
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-t p-b-26">
+									<a href="#" class="dis-block wrap-pic-w w-size11 overlay1 m-r-17">
+										<img src="images/popular-05.jpg" alt="IMG">
+									</a>
+
+									<div class="w-size12 flex-col">
+										<a href="#" class="s-txt27 hov-color-main trans-03 p-b-13">
+											Training Fee's invested back into your franchise business
+										</a>
+
+										<span class="s-txt28">
+											May 2, 2017
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Archive -->
+						<div class="p-t-24">
+							<h4 class="m-txt24 p-b-22">
+								Archive
+							</h4>
+
+							<ul>
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										July 2018
+									</a>
+
+									<span class="s-txt2">
+										(9)
+									</span>
+								</li>
+
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										June 2018
+									</a>
+
+									<span class="s-txt2">
+										(39)
+									</span>
+								</li>
+
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										May 2018
+									</a>
+
+									<span class="s-txt2">
+										(29)
+									</span>
+								</li>
+
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										April  2018
+									</a>
+
+									<span class="s-txt2">
+										(35)
+									</span>
+								</li>
+
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										March 2018
+									</a>
+
+									<span class="s-txt2">
+										(22)
+									</span>
+								</li>
+
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										February 2018
+									</a>
+
+									<span class="s-txt2">
+										(32)
+									</span>
+								</li>
+
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										January 2018
+									</a>
+
+									<span class="s-txt2">
+										(21)
+									</span>
+								</li>
+
+								<li class="flex-w flex-sb-m p-b-10">
+									<a href="#" class="s-txt2 hov-color-main trans-04">
+										December 2017
+									</a>
+
+									<span class="s-txt2">
+										(26)
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg4 p-t-25">
+		<div class="container p-b-60">
+			<div class="row">
+				<div class=" col-sm-12 col-lg-3 p-t-30">
+					<div class="w-full wrap-pic-max-w">
+						<a href="index.html"><img src="images/icons/logo-02.png" alt="LOGO"></a>
+					</div>
+
+					<p class="s-txt9 p-t-30">
+						Lean To Drive is a clean PSD theme suitable for corporate. You can cus-tomize it very easy to fit your needs. Lorem ipsum dolor sit amet, consecte-tur adipiscing elit sollicitudin vel effici-tur eu, posuere sit amet erat.
+					</p>
+				</div>
+				
+				<div class=" col-sm-6 col-lg-3 p-t-30">
+					<h4 class="m-txt12 p-t-14">
+						Company
+					</h4>
+
+					<div class="wrap-link-footer p-t-28">
+						<ul class="col-left">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="#">Teachers</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+
+						<ul class="col-right">
+							<li><a href="#">Blogs</a></li>
+							<li><a href="#">404 page</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Elements</a></li>
+							<li><a href="#">Typography</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class=" col-sm-6 col-lg-3 p-t-30">
+					<h4 class="m-txt12 p-t-14">
+						Contact us
+					</h4>
+
+					<ul class="contact-footer p-t-28">
+						<li>
+							<i class="fa fa-home" aria-hidden="true"></i>
+							379 5th Ave  New York, NYC 10018
+						</li>
+
+						<li>
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							(+1) 96 716 6879
+						</li>
+
+						<li>
+							<i class="fa fa-fax" aria-hidden="true"></i>
+							(+1) 96 716 6879
+						</li>
+
+						<li>
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							contact@site.com
+						</li>
+
+						<li>
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+							Mon-Fri 09:00 - 17:00
+						</li>
+					</ul>
+				</div>
+
+				<div class=" col-sm-6 col-lg-3 p-t-30">
+					<h4 class="m-txt12 p-t-14">
+						Gallery
+					</h4>
+
+					<div class="wrap-gallery-footer p-t-35">
+						<a class="item-gallery-footer wrap-pic-w" href="images/gallery-footer-01.jpg" data-lightbox="gallery-footer">
+							<img src="images/gallery-footer-01.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/gallery-footer-02.jpg" data-lightbox="gallery-footer">
+							<img src="images/gallery-footer-02.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/gallery-footer-03.jpg" data-lightbox="gallery-footer">
+							<img src="images/gallery-footer-03.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/gallery-footer-04.jpg" data-lightbox="gallery-footer">
+							<img src="images/gallery-footer-04.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/gallery-footer-05.jpg" data-lightbox="gallery-footer">
+							<img src="images/gallery-footer-05.jpg" alt="GALLERY">
+						</a>
+
+						<a class="item-gallery-footer wrap-pic-w" href="images/gallery-footer-06.jpg" data-lightbox="gallery-footer">
+							<img src="images/gallery-footer-06.jpg" alt="GALLERY">
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="bg3 txt-center p-t-19 p-b-16">
+			<span class="s-txt10">@ 2018 AuThemes.</span>
+			<a href="https://themeforest.net/cart/add_items?item_ids=21207623" class="dis-inline s-txt11 hov-color-white trans-04">Get The Template</a>
+		</div>
+	</footer>
+
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top hov-bg-main" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/wow/wow.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/dist/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

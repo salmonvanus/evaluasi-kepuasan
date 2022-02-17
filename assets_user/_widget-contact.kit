@@ -1,0 +1,50 @@
+<div>
+  <div class="uk-position-fixed uk-widget-contact uk-position-bottom-right">
+    <div class="uk-margin-medium-top uk-float-right">
+      <a href="#" class="uk-icon-button uk-box-shadow-medium" data-uk-icon="icon: question; ratio: 1.4" data-uk-toggle="target: #toggle-widget; animation: uk-animation-fade;"></a>
+    </div>
+  </div>
+  <div class="uk-position-fixed uk-widget-contact uk-position-bottom-right">
+    <div id="toggle-widget" hidden>
+      <div class="uk-card uk-card-small uk-card-default uk-box-shadow-large uk-overflow-hidden">
+        <div class="uk-card-header">
+          <h5 class="">How can we help? Let us know!
+            <a href="#" data-uk-icon="icon: close; ratio: 1.2" data-uk-toggle="target: #toggle-widget"></a>
+          </h5>
+        </div>
+        <div class="uk-card-body">
+          <form class="uk-form-stacked">
+            <div>
+              <label class="uk-form-label uk-text-xsmall" for="name">Name</label>
+              <div class="uk-form-controls">
+                <input id="name" class="uk-input uk-form-small" name="name" type="text" required="">
+              </div>
+            </div>
+            <div class="uk-margin-small">
+              <label class="uk-form-label uk-text-xsmall" for="_replyto">Email</label>
+              <div class="uk-form-controls">
+                <input id="_replyto" class="uk-input uk-form-small" name="_replyto" type="email" required="">
+              </div>
+            </div>
+            <div class="uk-margin-small">
+              <label class="uk-form-label uk-text-xsmall" for="_subject">Subject</label>
+              <div class="uk-form-controls">
+                <input id="_subject" class="uk-input uk-form-small" name="_subject" type="text">
+              </div>
+            </div>
+            <div class="uk-margin-small">
+              <label class="uk-form-label uk-text-xsmall" for="message">Message</label>
+              <div class="uk-form-controls">
+                <textarea id="message" class="uk-textarea uk-form-small" name="message" rows="3" minlength="10"
+                  required=""></textarea>
+              </div>
+            </div>
+            <div class="uk-text-center">
+              <input class="uk-button uk-button-primary uk-button-small" type="submit" value="Send Message">
+            </div>
+          </form>        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
