@@ -31,10 +31,15 @@ class Faq extends CI_Controller
         $this->load->view('templates_user/footer');
     }
 
-    public function detail_faq($id)
+    public function detail_faq($link)
     {
+        $decrypt = base64_decode(urldecode($link));
+        $id = (($decrypt * 7536) / 312 / 123678);
         // echo $id;
+        // die;
+
         $data['faq'] = $this->Data_faq->show_faq_by_id($id);
+
 
         $get_faq_number = $this->Data_faq->get_faq_number($id);
 
@@ -148,8 +153,11 @@ class Faq extends CI_Controller
         $data = $this->Data_faq->show_faq_dom();
         foreach ($data as $element) {
             $json[] = array(
+                $id = $element['faq_id'],
+                $encrypt = (($id * 123678 * 312) / 7536),
+                $link = urlencode(base64_encode($encrypt)),
                 'label' => substr($element['faq_consultation'], 0, 40) . "...",
-                'value' => "Faq/detail_faq/" . $element['faq_id'],
+                'value' => "Faq/detail_faq/" . $link,
             );
         }
         $this->output->set_header('Content-Type: application/json');

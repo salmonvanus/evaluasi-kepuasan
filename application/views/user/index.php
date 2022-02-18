@@ -13,7 +13,14 @@ echo $this->session->flashdata('message');
 			<div class="uk-width-expand@m">
 				<div class="uk-child-width-1-2@s uk-h4 uk-text-500" data-uk-grid>
 					<?php foreach ($faq as $data) : ?>
-						<div><a href="<?= base_url('Faq/detail_faq/') . $data['faq_id']; ?>">
+						<div><a href="
+						<?php
+						// echo $data['faq_id'];
+						$id = $data['faq_id'];
+						$encrypt = (($id * 123678 * 312) / 7536);
+						$link = urlencode(base64_encode($encrypt));
+						echo base_url('Faq/detail_faq/') . $link;
+						?>">
 								<?php echo '<u style="color:black;">' . $data['category_name'] . '</u>';
 								echo " - ";
 								echo substr($data['faq_consultation'], 0, 50) . "..."; ?></a>
