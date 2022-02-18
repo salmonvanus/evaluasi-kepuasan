@@ -6,7 +6,16 @@ echo $this->session->flashdata('message');
 		<div data-uk-grid>
 			<div class="uk-width-1-3@m">
 				<?php foreach ($category as $data) : ?>
-					<h2 class="uk-h1"><a href="<?= base_url('Landing/detail_consultation_category/') . $data['category_id']; ?>"><?php echo $data['category_name']; ?>
+					<h2 class="uk-h1"><a href="
+					<?php
+					$id = $data['category_id'];
+					$encrypt = (($id * 123678 * 312) / 7536);
+					$link = urlencode(base64_encode($encrypt));
+					echo base_url('Landing/detail_consultation_category/') . $link;
+					?>">
+							<?php
+							echo $data['category_name'];
+							?>
 						</a></h2>
 				<?php endforeach; ?>
 			</div>

@@ -25,8 +25,11 @@ class Article extends CI_Controller
         $this->load->view('templates_user/footer');
     }
 
-    public function detail_article($id)
+    public function detail_article($link)
     {
+        $decrypt = base64_decode(urldecode($link));
+        $id = round(($decrypt * 7536) / 312 / 123678);
+
         $data['article_side_bar']   = $this->Data_article->show_u_article_left_bar();
         $data['detail_article']     = $this->Data_article->show_u_article_by_id($id);
 

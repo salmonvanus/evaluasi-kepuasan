@@ -32,9 +32,12 @@ class Landing extends CI_Controller
         $this->load->view('templates_user/footer');
     }
 
-    public function detail_consultation_category($id)
+    public function detail_consultation_category($link)
     {
+        $decrypt = base64_decode(urldecode($link));
+        $id = round(($decrypt * 7536) / 312 / 123678);
         // echo $id;
+        // die;
         $data['consultation_category'] = $this->Data_faq->show_detail_consultation_category($id);
         $data['category_name']         = $this->Data_category->get_category($id);
         // var_dump($data);

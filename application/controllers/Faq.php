@@ -34,7 +34,7 @@ class Faq extends CI_Controller
     public function detail_faq($link)
     {
         $decrypt = base64_decode(urldecode($link));
-        $id = (($decrypt * 7536) / 312 / 123678);
+        $id = round(($decrypt * 7536) / 312 / 123678);
         // echo $id;
         // die;
 
@@ -154,7 +154,7 @@ class Faq extends CI_Controller
         foreach ($data as $element) {
             $json[] = array(
                 $id = $element['faq_id'],
-                $encrypt = (($id * 123678 * 312) / 7536),
+                $encrypt = round(($id * 123678 * 312) / 7536),
                 $link = urlencode(base64_encode($encrypt)),
                 'label' => substr($element['faq_consultation'], 0, 40) . "...",
                 'value' => "Faq/detail_faq/" . $link,

@@ -7,7 +7,14 @@
                         <h3 class="uk-margin-small-bottom">Kategori</h3>
                         <ul class="uk-nav uk-nav-default">
                             <?php foreach ($category as $data) : ?>
-                                <li><a href="<?= base_url('Landing/detail_consultation_category/') . $data['category_id']; ?>"><?= $data['category_name']; ?></a></li>
+                                <li><a href="
+                                <?php
+                                $id = $data['category_id'];
+                                $encrypt = (($id * 123678 * 312) / 7536);
+                                $link = urlencode(base64_encode($encrypt));
+                                echo base_url('Landing/detail_consultation_category/') . $link;
+                                ?>">
+                                        <?= $data['category_name']; ?></a></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
@@ -24,7 +31,13 @@
                 </div>
                 <div class="uk-child-width-1-1 uk-h4 uk-text-500 uk-margin-medium-top" data-uk-grid>
                     <?php foreach ($faq as $data) : ?>
-                        <div><a href="<?= base_url('Faq/detail_faq/') . $data['faq_id']; ?>"><?= $data['faq_consultation']; ?></a></div>
+                        <div><a href="
+                        <?php
+                        $id = $data['faq_id'];
+                        $encrypt = (($id * 123678 * 312) / 7536);
+                        $link = urlencode(base64_encode($encrypt));
+                        echo base_url('Faq/detail_faq/') . $link; ?>">
+                                <?= $data['faq_consultation']; ?></a></div>
                     <?php endforeach; ?>
                 </div>
             </div>

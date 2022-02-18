@@ -25,14 +25,6 @@
                         <a class="uk-navbar-item uk-logo" href="<?= base_url('Landing'); ?>">Konsultasi Hukum</a>
                     </div>
                     <div class="uk-navbar-right">
-                        <div>
-                            <a id="search-navbar-toggle" class="uk-navbar-toggle" data-uk-search-icon="ratio: 1.1" href="#"></a>
-                            <div data-uk-drop="mode: click; pos: left-center; offset: 0">
-                                <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
-                                    <input id="search-navbar" class="uk-search-input" type="search" placeholder="Search for answers" autofocus autocomplete="off" data-minchars="1" data-maxitems="30">
-                                </form>
-                            </div>
-                        </div>
                         <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li><a href="<?= base_url('Landing'); ?>">Beranda</a></li>
@@ -68,7 +60,11 @@
                     </ul>
                     <div class="uk-child-width-1-2@s uk-h4 uk-text-500" data-uk-grid>
                         <?php foreach ($consultation_category as $data) : ?>
-                            <div><a href="<?= base_url('Faq/detail_faq/') . $data['faq_id']; ?>">
+                            <div><a href="<?php
+                                            $id = $data['faq_id'];
+                                            $encrypt = (($id * 123678 * 312) / 7536);
+                                            $link = urlencode(base64_encode($encrypt));
+                                            echo base_url('Faq/detail_faq/') . $link; ?>">
                                     <?php echo '<u style="color:black;">' . $data['category_name'] . '</u>';
                                     echo " - ";
                                     echo $data['faq_consultation']; ?>
