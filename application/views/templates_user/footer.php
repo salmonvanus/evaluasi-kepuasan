@@ -1,264 +1,117 @@
-<div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
-    <div class="uk-offcanvas-bar">
-        <a class="uk-logo" href="<?= base_url('Landing'); ?>">Konsultasi Hukum</a>
-        <button class="uk-offcanvas-close" type="button" data-uk-close></button>
-        <ul class="uk-nav uk-nav-primary uk-nav-offcanvas uk-margin-top uk-text-center uk-text-500">
-            <li class="uk-active"><a href="<?= base_url('Landing'); ?>">Beranda</a></li>
-            <li><a href="<?= base_url('Faq'); ?>">Faq</a></li>
-            <li><a href="<?= base_url('Article'); ?>">Artikel</a></li>
-            <li>
-                <div class="uk-navbar-item"><a class="uk-button uk-button-primary" href="<?= base_url('Consultation_form'); ?>">Konsultasi</a></div>
-            </li>
-        </ul>
-        <div class="uk-margin-top uk-text-center">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center">
-                <div>
-                    <a href="https://twitter.com/" data-uk-icon="icon: twitter" class="uk-icon-link" target="_blank"></a>
-                </div>
-                <div>
-                    <a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link" target="_blank"></a>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link" target="_blank"></a>
-                </div>
-                <div>
-                    <a href="https://vimeo.com/" data-uk-icon="icon: vimeo" class="uk-icon-link" target="_blank"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- jQuery  -->
+<script src="<?= base_url('assets/'); ?>js/jquery.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/metisMenu.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/waves.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/jquery.slimscroll.min.js"></script>
+
+<!-- Required datatable js -->
+<script src="<?= base_url('assets/'); ?>plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Buttons examples -->
+<script src="<?= base_url('assets/'); ?>plugins/datatables/dataTables.buttons.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/buttons.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/jszip.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/pdfmake.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/vfs_fonts.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/buttons.html5.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/buttons.print.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/buttons.colVis.min.js"></script>
+
+<!-- Responsive examples -->
+<script src="<?= base_url('assets/'); ?>plugins/datatables/dataTables.responsive.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/datatables/responsive.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets/'); ?>pages/jquery.datatable.init.js"></script>
+
+<!--Wysiwig js-->
+<script src="<?= base_url('assets/'); ?>plugins/tinymce/tinymce.min.js"></script>
+<script src="<?= base_url('assets/'); ?>pages/jquery.form-editor.init.js"></script>
 
 
-<footer class="uk-section uk-section-muted uk-section-small">
-    <div class=" uk-container uk-text-muted uk-margin-small-top">
-        <div class="uk-margin uk-margin-small-bottom ">
-            <img style="width: 40%; height: 40%;" class="mt-0" src="<?= base_url('assets_user/images/'); ?>logo_footer.png" alt="">
-        </div>
-        <div class="uk-margin uk-margin-small-bottom">
-            <a href="#" class="uk-logo">
-                Alamat Kantor
-            </a>
-        </div>
-        <div class="uk-margin uk-margin-small-top uk-text-small">
-            <p style="font-size: medium;">Jl. Trans Sulawesi, Pondang, Amurang Tim. Kabupaten Minahasa Selatan, Sulawesi Utara</p>
-            <hr class="uk-margin uk-margin-0-top" />
-        </div>
-        <div class="uk-margin uk-text-small uk-margin-large-top">
-            <p style="font-size: smaller;">Powered by <a href="https://cleverlabs.id/" target="_blank">Cleverlabs Indonesia</a> in Manado, North Sulawesi.</p>
-        </div>
-        <!-- <div class="uk-margin">
-            <div data-uk-grid class="uk-child-width-auto uk-grid-collapse">
-                <div class="uk-margin-small-right">
-                    <a href="#" data-uk-icon="icon: facebook" class="uk-icon-link uk-icon" target="_blank"></a>
-                </div>
-                <div class="uk-margin-small-right">
-                    <a href="#" data-uk-icon="icon: instagram" class="uk-icon-link uk-icon" target="_blank"></a>
-                </div>
-                <div class="uk-margin-small-right">
-                    <a href="#" data-uk-icon="icon: twitter" class="uk-icon-link uk-icon" target="_blank"></a>
-                </div>
-                <div class="uk-margin-small-right">
-                    <a href="#" data-uk-icon="icon: youtube" class="uk-icon-link uk-icon" target="_blank"></a>
-                </div>
-                <div class="uk-margin-small-right">
-                    <a href="#" data-uk-icon="icon: vimeo" class="uk-icon-link uk-icon" target="_blank"></a>
-                </div>
-            </div>
-        </div> -->
-    </div>
-</footer>
+<!--form validation init-->
+<script src="<?= base_url('assets/'); ?>plugins/summernote/summernote-bs4.min.js"></script>
 
-<script src="<?= base_url('assets_user/'); ?>js/awesomplete2.js"></script>
+<!-- Modal-Effect -->
+<script src="<?= base_url('assets/'); ?>plugins/custombox/custombox.min.js"></script>
+<script src="<?= base_url('assets/'); ?>plugins/custombox/custombox.legacy.min.js"></script>
 
-<script>
-    var baseurl = "<?php echo site_url(); ?>";
-</script>
+<script src="<?= base_url('assets/') ?>plugins/parsleyjs/parsley.min.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.validation.init.js"></script>
+<script src="<?= base_url('assets/') ?>js/jquery.core.js"></script>
+
+<!-- Plugins js -->
+<script src="<?= base_url('assets/') ?>plugins/moment/moment.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/apexcharts/apexcharts.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/dropify/js/dropify.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/ticker/jquery.jConveyorTicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/peity-chart/jquery.peity.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/chartjs/chart.min.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.profile.init.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.form-upload.init.js"></script>
+
+<script src="<?= base_url('assets/') ?>plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/timepicker/tempusdominus-bootstrap-4.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/clockpicker/jquery-clockpicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/colorpicker/jquery-asColor.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/colorpicker/jquery-asGradient.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/colorpicker/jquery-asColorPicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/select2/select2.min.js"></script>
+
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+
+<script src="<?= base_url('assets/') ?>pages/jquery.clock-img.init.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.forms-advanced.js"></script>
+
+<!--Wysiwig js-->
+<script src="<?= base_url('assets/') ?>plugins/tinymce/tinymce.min.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.form-editor.init.js"></script>
+
+<!--Button tooltip-->
+<script src="<?= base_url('assets/') ?>plugins/tippy/tippy.all.min.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.tooltipster.js"></script>
+
+<!-- App js -->
+<script src="<?= base_url('assets/'); ?>js/app.js"></script>
 
 
-<script>
-    function hanyaAngka(evt) {
-        var charCode = (evt.which) ? evt.which : event.keyCode
-        if (charCode > 31 && (charCode < 48 || charCode > 57))
-            return false;
-        return true;
-    }
-</script>
-
-<!-- <script>
+<script type="text/javascript">
     $(document).ready(function() {
+        $('form').parsley();
+    });
+</script>
 
-        load_data();
-
-        function load_data(query) {
-            $.ajax({
-                url: "<?php echo base_url(); ?>Faq/show_faq",
-                method: "POST",
-                data: {
-                    query: query
-                },
-                success: function(data) {
-                    $('#result').html(data);
-                }
-            })
-        }
-
-        $('#search_text').keyup(function() {
-            var search = $(this).val();
-            if (search != '') {
-                load_data(search);
-            } else {
-                load_data();
+<script>
+    $(document).ready(function() {
+        $('#submit').click(function() {
+            var pass = $('#pass').val();
+            var pass2 = $('#pass2').val();
+            if (pass != pass2) {
+                alert("password tidak sama!");
             }
         });
     });
-</script> -->
+</script>
 
-<!-- <script>
-    function delete_search_history(id) {
-        fetch("<?= base_url('Faq/proses_search_data'); ?>", {
-
-            method: "POST",
-
-            body: JSON.stringify({
-                action: 'delete',
-                id: id
-            }),
-
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8'
+<script>
+    $('[data-plugin="custommodal"]').on('click', function(e) {
+        var modal = new Custombox.modal({
+            content: {
+                target: $(this).attr("href"),
+                effect: $(this).attr("data-animation")
             }
-
-        }).then(function(response) {
-
-            return response.json();
-
-        }).then(function(responseData) {
-            load_search_history();
         });
-    }
+        modal.open();
+    });
+</script>
 
-    function load_search_history() {
-        var search_query = document.getElementsByName('search_box')[0].value;
-
-        if (search_query == '') {
-
-            fetch("<?= base_url('Faq/proses_search_data'); ?>", {
-
-                method: "POST",
-
-                body: JSON.stringify({
-                    action: 'fetch'
-                }),
-
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8'
-                }
-
-            }).then(function(response) {
-
-                return response.json();
-
-            }).then(function(responseData) {
-
-                if (responseData.length > 0) {
-
-                    var html = '<ul class="list-group">';
-
-                    html += '<li class="list-group-item d-flex justify-content-between align-items-center"><b class="text-primary"><i>Your Recent Searches</i></b></li>';
-
-                    for (var count = 0; count < responseData.length; count++) {
-
-                        html += '<li class="list-group-item text-muted" style="cursor:pointer"><i class="fas fa-history mr-3"></i><span onclick="get_text(this)">' + responseData[count].search_query + '</span> <i class="far fa-trash-alt float-right mt-1" onclick="delete_search_history(' + responseData[count].id + ')"></i></li>';
-
-                    }
-
-                    html += '</ul>';
-
-                    document.getElementById('search_result').innerHTML = html;
-
-                }
-
-            });
-
-        }
-    }
-
-    function get_text(event) {
-        var string = event.textContent;
-        //fetch api
-        fetch("<?= base_url('Faq/proses_search_data'); ?>", {
-
-            method: "POST",
-
-            body: JSON.stringify({
-                search_query: string
-            }),
-
-            headers: {
-                "Content-type": "application/json; charset=UTF-8"
-            }
-        }).then(function(response) {
-
-            return response.json();
-
-        }).then(function(responseData) {
-
-            document.getElementsByName('search_box')[0].value = string;
-
-            document.getElementById('search_result').innerHTML = '';
-
-        });
-
-    }
-
-    function load_data(query) {
-        if (query.length > 2) {
-            var form_data = new FormData();
-
-            form_data.append('query', query);
-
-            var ajax_request = new XMLHttpRequest();
-
-            ajax_request.open('POST', "<?= base_url('Faq/proses_search_data'); ?>");
-
-            ajax_request.send(form_data);
-
-            ajax_request.onreadystatechange = function() {
-                if (ajax_request.readyState == 4 && ajax_request.status == 200) {
-                    var response = JSON.parse(ajax_request.responseText);
-
-                    var html = '<div class="list-group">';
-
-                    if (response.length > 0) {
-                        for (var count = 0; count < response.length; count++) {
-                            html += '<a href="#" class="list-group-item list-group-item-action" onclick="get_text(this)">' + response[count].post_title + '</a>';
-                        }
-                    } else {
-                        html += '<a href="#" class="list-group-item list-group-item-action disabled">No Data Found</a>';
-                    }
-
-                    html += '</div>';
-
-                    document.getElementById('search_result').innerHTML = html;
-                }
-            }
-        } else {
-            document.getElementById('search_result').innerHTML = '';
-        }
-    }
-
-    /*var ignore_element = document.getElementById('search_box');
-
-    document.addEventListener('click', function(event) {
-        var check_click = ignore_element.contains(event.target);
-        if (!check_click) 
-        {
-            document.getElementById('search_result').innerHTML = '';
-        }
-    });*/
-</script> -->
-
+<script>
+    var resizefunc = [];
+</script>
 
 </body>
 

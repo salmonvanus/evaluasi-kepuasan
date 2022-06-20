@@ -187,7 +187,6 @@
                         i = document.getElementById("search-navbar");
                     var n = data;
                     n.toString();
-                    console.log(n);
                     // return returned_array;
                     e && (e.addEventListener("awesomplete-selectcomplete", (
                                 function(t) {

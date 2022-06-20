@@ -16,8 +16,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?php echo base_url('assets_login/images/logo-minsel.png'); ?>">
-    <title>Palakat | <?php $title; ?></title>
+    <!-- <link rel="shortcut icon" href="<?php echo base_url('assets_login/images/logo-minsel.png'); ?>"> -->
+    <title>Si Sinus | <?php $title; ?></title>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets_login/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets_login/css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets_login/css/iofrm-style.css">
@@ -32,12 +32,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="form-items">
                         <div class="website-logo-inside">
                             <a href="<?php echo base_url('login/'); ?>">
-                                <div class="logo">
-                                    <!-- <img class="logo-size" src="<?= base_url('assets_login/images/logo-minsel.png'); ?>" alt=""> -->
-                                </div>
                             </a>
                         </div>
-                        <h3>Selamat Datang di Aplikasi KONSULTASI HUKUM Pemintah Kabupaten Minahasa Selatan.</h3>
+                        <h3>SI SINUS (Sistem Informasi Penyakit Sinusitis).</h3>
                         <p>Silahkan masukkan nama akun dan kata sandi untuk masuk ke aplikasi.</p>
                         <div class="page-links">
                             <!-- <a href="<?php echo base_url('login'); ?>" class="active">Masuk</a> -->
@@ -51,9 +48,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <button id="submit" type="submit" name="login" class="ibtn">Masuk</button>
                             </div>
                         </form>
-                        <!-- <div class="other-links">
-                            <span>Or login with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
-                        </div> -->
                     </div>
                 </div>
             </div>

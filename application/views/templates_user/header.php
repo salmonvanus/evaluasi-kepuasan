@@ -1,84 +1,77 @@
 <!DOCTYPE html>
-<html lang="en-gb" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index | Aplikasi Konsultasi Hukum Kabupaten Minahasa Selatan</title>
-    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets_user/images/'); ?>logo_minsel.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url('assets_user/'); ?>css/main.css" />
-    <script src="<?= base_url('assets_user/'); ?>js/uikit.js"></script>
+    <meta charset="utf-8" />
+    <title><?= $title; ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A premium admin dashboard template by mannatthemes" name="description" />
+    <meta content="Mannatthemes" name="author" />
 
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- DataTables -->
+    <link href="<?= base_url(); ?>assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url(); ?>assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Responsive datatable examples -->
+    <link href="<?= base_url(); ?>assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <link href="<?= base_url(); ?>assets/plugins/summernote/summernote-bs4.css" rel="stylesheet" />
+    <link href="<?= base_url(); ?>assets/plugins/custombox/custombox.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Clock css -->
+    <link href="<?= base_url(); ?>assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+
+    <!-- Plugins css -->
+    <link href="<?= base_url(); ?>assets/plugins/timepicker/tempusdominus-bootstrap-4.css" rel="stylesheet" />
+    <link href="<?= base_url(); ?>assets/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/plugins/clockpicker/jquery-clockpicker.min.css" rel="stylesheet" />
+    <link href="<?= base_url(); ?>assets/plugins/colorpicker/asColorPicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url(); ?>assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="<?= base_url(); ?>assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="<?= base_url(); ?>assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+
+    <link href="<?= base_url(); ?>assets/plugins/ticker/jquery.jConveyorTicker.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url(); ?>assets/plugins/dropify/css/dropify.min.css" rel="stylesheet">
+
+    <!-- App css -->
+    <link href="<?= base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url(); ?>assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url(); ?>assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css" />
+    <style id="clock-animations"></style>
+
+    <script src="https://kit.fontawesome.com/7c67b5b4a7.js" crossorigin="anonymous"></script>
 
 </head>
 
-
 <body>
-    <header id="header" class="uk-background-primary uk-background-norepeat uk-background-cover 
-	uk-background-center-center uk-background-fixed uk-background-blend-overlay" style="background-image: url('assets_user/images/beranda/hut_minsel.jpg');">
-        <div class="uk-navbar-wrapper" data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; 
-	  cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent ; top: #header; media: @m">
-            <nav class="uk-navbar-container">
-                <div class="uk-container uk-navbar-transparent uk-light">
-                    <div data-uk-navbar>
-                        <div class="uk-navbar-left uk-margin-small-left">
-                            <a class="uk-navbar-item uk-logo uk-visible@m" href="<?= base_url('Landing'); ?>">Konsultasi Hukum</a>
-                        </div>
-                        <div class="uk-navbar-left uk-hidden@m">
-                            <a class="uk-navbar-item uk-small-logo" href="<?= base_url('Landing'); ?>">Konsultasi Hukum</a>
-                        </div>
-                        <div class="uk-navbar-right">
-                            <div>
-                                <!-- <a id="search-navbar-toggle" class="uk-navbar-toggle" data-uk-search-icon="ratio: 1.1" href="#"></a> -->
-                                <div data-uk-drop="mode: click; pos: left-center; offset: 0">
-                                    <form class="uk-search uk-search-navbar uk-width-1-1" method="POST" onsubmit="return false;">
-                                        <input id="search-navbar" class="uk-search-input" type="search" placeholder="Cari disini" autofocus autocomplete="off" data-minchars="1" data-maxitems="30">
-                                    </form>
-                                </div>
-                            </div>
-                            <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span data-uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span></a>
-                            <ul class="uk-navbar-nav uk-visible@m">
-                                <li class="<?= ($activePage == 'Landing') ? 'active' : 'uk-active'; ?>"><a href="<?= base_url('Landing'); ?>">Beranda</a></li>
-                                <li class="<?= ($activePage == 'Faq') ? 'active' : 'uk-active'; ?>"><a href="<?= base_url('Faq'); ?>">Faq</a></li>
-                                <li><a href="<?= base_url('Article'); ?>">Artikel</a></li>
-                                <li>
-                                    <div class="uk-navbar-item">
-                                        <a class="uk-button uk-button-small uk-button-primary-outline" href="<?= base_url('Consultation_form'); ?>">Konsultasi</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <div>
-            <div class="uk-section uk-section-large uk-section-hero uk-position-relative uk-light" data-uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-                <div class="uk-container uk-margin-large-top uk-margin-small-bottom">
-                    <div class="uk-child-width-1-2@m uk-grid-large" data-uk-grid>
-                        <div class="uk-flex uk-flex-bottom">
-                            <h1 class="uk-heading-medium">Ada Yang Bisa Kami Bantu?</h1>
-                        </div>
-                        <div class="uk-flex uk-flex-bottom">
-                            <div class="uk-position-relative uk-width-1-1">
-                                <form class="uk-search uk-search-default uk-width-1-1" name="search-hero" onsubmit="return false;">
-                                    <span class="uk-search-icon-flip" data-uk-search-icon="ratio: 1.6"></span>
-                                    <input id="search-hero" class="uk-search-input uk-form-large" type="search" placeholder="Cari disini" autocomplete="off" data-minchars="1" data-maxitems="30">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Top Bar Start -->
+    <div class="topbar">
+        <!-- Navbar -->
+        <nav class="navbar-custom">
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="<?= base_url('Landing'); ?>" class="logo">
+                    <span>
+                        <img src="<?= base_url(); ?>/assets/images/logo-dark.png" alt="logo-small" class="logo-sm">
+                    </span>
+                </a>
             </div>
-        </div>
-    </header>
+        </nav>
+        <!-- end navbar-->
+    </div>
+    <!-- Top Bar End -->
+
+    <div class="page-wrapper-img" style="box-shadow: inset 0 0 0 2000px rgba(218, 46, 15, 0.8);">
+    </div>
+    <!--end page-wrapper-img-->
+
+    <script>
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $("#myModal").modal();
+            });
+        });
+    </script>

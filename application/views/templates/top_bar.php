@@ -3,7 +3,6 @@
         <div class="topbar">
             <!-- Navbar -->
             <nav class="navbar-custom">
-
                 <!-- LOGO -->
                 <div class="topbar-left">
                     <a href="<?= base_url('admin/Admin_panel'); ?>" class="logo">

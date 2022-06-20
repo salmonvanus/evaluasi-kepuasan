@@ -1,37 +1,49 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+<?php defined('BASEPATH') or exit('No direct script access allowed');
+/**
 
-class pdf {
+
+ * CodeIgniter PDF Library
+ *
+ * Generate PDF's in your CodeIgniter applications.
+ *
+ * @package         CodeIgniter
+ * @subpackage      Libraries
+ * @category        Libraries
+ * @author          Chris Harvey
+ * @license         MIT License
+ * @link            https://github.com/chrisnharvey/CodeIgniter-PDF-Generator-Library
 
 
-	function pdf()
 
+ */
+
+require_once(dirname(__FILE__) . '/dompdf/autoload.inc.php');
+
+class Pdf extends DOMPDF
+{
+	/**
+	 * Get an instance of CodeIgniter
+	 *
+	 * @access  protected
+	 * @return  void
+	 */
+	protected function ci()
 	{
-
-		$CI = & get_instance();
-
-		log_message('Debug', 'mPDF class is loaded.');
-
+		return get_instance();
 	}
 
-
-	function load($param=NULL)
-
+	/**
+	 * Load a CodeIgniter view into domPDF
+	 *
+	 * @access  public
+	 * @param   string  $view The view to load
+	 * @param   array   $data The view data
+	 * @return  void
+	 */
+	public function load_view($view, $data = array())
 	{
+		$html = $this->ci()->load->view($view, $data, TRUE);
 
-		include_once APPPATH.'/third_party/mpdf/mpdf.php';
-
-
-		if ($params == NULL)
-
-		{
-
-			$param = '"en-GB-x","A4","","",10,10,10,10,6,3';
-
-		}
-
-
-		return new mPDF($param);
-
+		$this->load_html($html);
 	}
-
 }

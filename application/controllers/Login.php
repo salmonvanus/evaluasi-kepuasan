@@ -16,7 +16,7 @@ class Login extends CI_Controller
 	{
 
 		if ($this->session->userdata('username')) {
-			redirect('admin/Admin_panel');
+			redirect('admin/Beranda');
 		}
 
 		$this->form_validation->set_rules('username', 'Username', 'trim|required');
@@ -49,7 +49,7 @@ class Login extends CI_Controller
 					'image'	   => $user['image']
 				];
 				$this->session->set_userdata($data);
-				redirect('admin/Admin_panel', $data);
+				redirect('admin/Beranda', $data);
 			} else {
 				$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
                 Nama akun dan Kata Sandi Salah!

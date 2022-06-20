@@ -24,6 +24,11 @@
 <script src="<?= base_url('assets/'); ?>plugins/datatables/responsive.bootstrap4.min.js"></script>
 <script src="<?= base_url('assets/'); ?>pages/jquery.datatable.init.js"></script>
 
+<!--Wysiwig js-->
+<script src="<?= base_url('assets/'); ?>plugins/tinymce/tinymce.min.js"></script>
+<script src="<?= base_url('assets/'); ?>pages/jquery.form-editor.init.js"></script>
+
+
 <!--form validation init-->
 <script src="<?= base_url('assets/'); ?>plugins/summernote/summernote-bs4.min.js"></script>
 
@@ -31,12 +36,47 @@
 <script src="<?= base_url('assets/'); ?>plugins/custombox/custombox.min.js"></script>
 <script src="<?= base_url('assets/'); ?>plugins/custombox/custombox.legacy.min.js"></script>
 
-<!-- App js -->
-<script src="<?= base_url('assets/'); ?>js/app.js"></script>
-
 <script src="<?= base_url('assets/') ?>plugins/parsleyjs/parsley.min.js"></script>
 <script src="<?= base_url('assets/') ?>pages/jquery.validation.init.js"></script>
 <script src="<?= base_url('assets/') ?>js/jquery.core.js"></script>
+
+<!-- Plugins js -->
+<script src="<?= base_url('assets/') ?>plugins/moment/moment.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/apexcharts/apexcharts.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/dropify/js/dropify.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/ticker/jquery.jConveyorTicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/peity-chart/jquery.peity.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/chartjs/chart.min.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.profile.init.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.form-upload.init.js"></script>
+
+<script src="<?= base_url('assets/') ?>plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/timepicker/tempusdominus-bootstrap-4.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/timepicker/bootstrap-material-datetimepicker.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/clockpicker/jquery-clockpicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/colorpicker/jquery-asColor.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/colorpicker/jquery-asGradient.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/colorpicker/jquery-asColorPicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/select2/select2.min.js"></script>
+
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+<script src="<?= base_url('assets/') ?>plugins/bootstrap-touchspin/js/jquery.bootstrap-touchspin.min.js"></script>
+
+<script src="<?= base_url('assets/') ?>pages/jquery.clock-img.init.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.forms-advanced.js"></script>
+
+<!--Wysiwig js-->
+<script src="<?= base_url('assets/') ?>plugins/tinymce/tinymce.min.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.form-editor.init.js"></script>
+
+<!--Button tooltip-->
+<script src="<?= base_url('assets/') ?>plugins/tippy/tippy.all.min.js"></script>
+<script src="<?= base_url('assets/') ?>pages/jquery.tooltipster.js"></script>
+
+<!-- App js -->
+<script src="<?= base_url('assets/'); ?>js/app.js"></script>
 
 
 <script type="text/javascript">
@@ -58,26 +98,6 @@
 </script>
 
 <script>
-    jQuery(document).ready(function() {
-
-        $('.summernote').summernote({
-            toolbar: [
-                // [groupName, [list of button]]
-                ['style', ['style']],
-                ['style', ['fontname', 'bold', 'italic', 'underline', 'clear']],
-                ['fontsize', ['fontsize']],
-                ['color', ['color']],
-                ['para', ['ul', 'ol', 'paragraph']],
-                ['height', ['height']]
-            ],
-            height: 320, // set editor height
-            minHeight: null, // set minimum height of editor
-            maxHeight: null, // set maximum height of editor
-            focus: false // set focus to editable area after initializing summernote
-
-        });
-
-    });
     $('[data-plugin="custommodal"]').on('click', function(e) {
         var modal = new Custombox.modal({
             content: {
@@ -93,71 +113,6 @@
     var resizefunc = [];
 </script>
 
-<!-- <script type="text/javascript">
-    $('#sampleTable').DataTable();
-</script> -->
-
-<!-- <script type="text/javascript">
-    $(document).ready(function() {
-        $('#datatable').dataTable({
-            "language": {
-                "decimal": "",
-                "emptyTable": "Tidak ada data yang tersedia",
-                "info": "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
-                "infoEmpty": "Data yang dicari tidak ditemukan",
-                "infoFiltered": "(difilter dari _MAX_ total data)",
-                "infoPostFix": "",
-                "thousands": ",",
-                "lengthMenu": "Tampilkan _MENU_ data",
-                "loadingRecords": "Memuat...",
-                "processing": "Sedang Memproses...",
-                "search": "Pencarian:",
-                "zeroRecords": "Tidak ada data yang ditamplkan",
-                "paginate": {
-                    "first": "Pertama",
-                    "last": "Terakhir",
-                    "next": "Berikutnya",
-                    "previous": "Sebelumnya"
-                },
-                "aria": {
-                    "sortAscending": ": Aktifkan untuk urutkan kolom secara ascending",
-                    "sortDescending": ": Aktifkan untuk urutkan kolom secara descending"
-                }
-            }
-        });
-        $('#datatable-keytable').DataTable({
-            keys: true
-        });
-        $('#datatable-responsive').DataTable();
-        $('#datatable-colvid').DataTable({
-            "dom": 'C<"clear">lfrtip',
-            "colVis": {
-                "buttonText": "Change columns"
-            }
-        });
-        $('#datatable-scroller').DataTable({
-            ajax: "<?php echo base_url(); ?>assets/plugins/datatables/json/scroller-demo.json",
-            deferRender: true,
-            scrollY: 380,
-            scrollCollapse: true,
-            scroller: true
-        });
-        var table = $('#datatable-fixed-header').DataTable({
-            fixedHeader: true
-        });
-        var table = $('#datatable-fixed-col').DataTable({
-            scrollY: "300px",
-            scrollX: true,
-            scrollCollapse: true,
-            paging: false,
-            fixedColumns: {
-                leftColumns: 1,
-                rightColumns: 1
-            }
-        });
-    });
-    TableManageButtons.init();
-</script> -->
 </body>
 
 </html>
