@@ -311,8 +311,19 @@
             </div> <!-- end col -->
         </div> <!-- end row -->
 
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <a style="width:100%" class="btn btn-primary waves-light waves-effect" href="<?= base_url('Landing'); ?>" value="Selesai" role="button">Selesai. Kembali Ke Beranda</a>
+            </div>
+        </div>
 
     </div><!-- container -->
+
+    <script>
+        function detail_data(id) {
+
+        }
+    </script>
 
     <footer class="footer text-center text-sm-left">
         <?= $footer . " "; ?>
