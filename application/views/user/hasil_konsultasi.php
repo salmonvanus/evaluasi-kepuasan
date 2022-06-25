@@ -282,27 +282,32 @@
                         $this->db->join('penyakit', 'penyakit.id_penyakit = hasil_analisa_pasien.id_penyakit');
                         $this->db->where('hasil_analisa_pasien.id_pasien', $id_pasien);
                         $show_hasil_analisa = $this->db->get()->result_array();
+                        // var_dump($show_hasil_analisa);
 
                         $f = array_column($show_hasil_analisa, 'kepercayaan_cf');
-                        $t = array_count_values($f);
-                        $u = (max($t));
-                        // print_r(($u));
+                        $max = $f[0];
 
-                        for ($z = 0; $z < $u; $z++) {
-                            $this->db->select('*');
-                            $this->db->from('hasil_analisa_pasien');
-                            $this->db->order_by('hasil_analisa_pasien.kepercayaan_cf', 'DESC');
-                            $this->db->join('penyakit', 'penyakit.id_penyakit = hasil_analisa_pasien.id_penyakit');
-                            $this->db->where('hasil_analisa_pasien.id_pasien', $id_pasien);
-                            $this->db->where('hasil_analisa_pasien.kepercayaan_cf', $f[$z]);
-                            $s_data = $this->db->get()->result_array();
-                            // var_dump($s_data);
+                        foreach ($f as $key => $val) {
+                            if ($max < $val) {
+                                $max = $val;
+                            }
+                        }
 
-                            if ($u > 1) {
-                                echo '<h4 style="color:red">' . "<b>" . $s_data[$z]['nama_penyakit'] . "</b>" . "</h4>";
-                                // echo "<br/>";
+                        $this->db->select('*');
+                        $this->db->from('hasil_analisa_pasien');
+                        $this->db->order_by('hasil_analisa_pasien.kepercayaan_cf', 'DESC');
+                        $this->db->order_by('hasil_analisa_pasien.id_penyakit', 'DESC');
+                        $this->db->join('penyakit', 'penyakit.id_penyakit = hasil_analisa_pasien.id_penyakit');
+                        $this->db->where('hasil_analisa_pasien.id_pasien', $id_pasien);
+                        $this->db->where('hasil_analisa_pasien.kepercayaan_cf', $max);
+                        $s_data = $this->db->get()->result_array();
+                        for ($o = 0; $o < count($s_data); $o++) {
+                            $nilai_max = $s_data[$o]['kepercayaan_cf'];
+                            // var_dump($nilai_max);
+                            if ($nilai_max > 1) {
+                                echo '<h4 style="color:red">' . "<b>" . $s_data[$o]['nama_penyakit'] . "</b>" . "</h4>";
                             } else {
-                                echo '<h4 style="color:red">' . "<b>" . $s_data[$z]['nama_penyakit'] . "</b>" . "</h4>";
+                                echo '<h4 style="color:red">' . "<b>" . $s_data[$o]['nama_penyakit'] . "</b>" . "</h4>";
                             }
                         }
                         ?>
