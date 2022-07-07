@@ -1,6 +1,6 @@
 <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar">
-        <a class="uk-logo" href="<?= base_url('Landing'); ?>">SI SINUS</a>
+        <a class="uk-logo" href="<?= base_url('Landing'); ?>">PAKAR SINUS</a>
         <button class="uk-offcanvas-close" type="button" data-uk-close></button>
         <ul class="uk-nav uk-nav-primary uk-nav-offcanvas uk-margin-top uk-text-center uk-text-500">
             <li class="uk-active"><a href="<?= base_url('Landing'); ?>">Beranda</a></li>
