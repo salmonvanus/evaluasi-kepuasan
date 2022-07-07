@@ -34,10 +34,10 @@
                 <div class="uk-container uk-navbar-transparent uk-light">
                     <div data-uk-navbar>
                         <div class="uk-navbar-left uk-margin-small-left">
-                            <a class="uk-navbar-item uk-logo uk-visible@m" href="<?= base_url('Landing'); ?>">SI SINUS</a>
+                            <a class="uk-navbar-item uk-logo uk-visible@m" href="<?= base_url('Landing'); ?>">Pakar SINUS</a>
                         </div>
                         <div class="uk-navbar-left uk-hidden@m">
-                            <a class="uk-navbar-item uk-small-logo" href="<?= base_url('Landing'); ?>">SI SINUS</a>
+                            <a class="uk-navbar-item uk-small-logo" href="<?= base_url('Landing'); ?>">Pakar SINUS</a>
                         </div>
                         <div class="uk-navbar-right">
                             <div>
@@ -69,7 +69,7 @@
                     <div class="uk-child uk-grid-large" data-uk-grid>
                         <div class="uk-flex uk-flex-bottom">
                             <center>
-                                <h1 class="uk-heading-medium">Selamat Datang di Sistem Informasi Penyakit Sinusitis</h1>
+                                <h1 class="uk-heading-medium">Selamat Datang di Sistem Pakar Penyakit Sinusitis</h1>
                                 <?php for ($i = 0; $i < 3; $i++) {
                                     echo "<br/>";
                                 } ?>

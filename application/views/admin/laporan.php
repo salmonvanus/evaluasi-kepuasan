@@ -26,6 +26,7 @@
                                     $this->db->select('nama_pasien');
                                     $this->db->select('id_pasien');
                                     $this->db->from('pasien_konsultasi');
+                                    $this->db->order_by('tanggal_konsultasi', 'DESC');
                                     $query = $this->db->get()->result_array();
 
                                     $z = 1;
@@ -42,15 +43,18 @@
                                         $this->db->where('hasil_analisa_pasien.id_pasien', $id_pasien);
                                         $this->db->order_by('hasil_analisa_pasien.kepercayaan_cf', 'DESC');
                                         $data = $this->db->get()->result_array();
+                                        // var_dump(array_unique($data));
+                                        // var_dump($data);
+                                        // echo count($data);
                                         echo "<tr>";
                                         echo "<td>"  . $query[$i]['nama_pasien'] . "</td>";
                                         echo "<td>";
-                                        for ($z = 0; $z < count($query); $z++) {
-                                            echo $data[$z]['nama_penyakit'] . "<br/>";
+                                        for ($z = 0; $z < count($data); $z++) {
+                                            echo ($data[$z]['nama_penyakit']) . "<br/>";
                                         }
                                         echo "</td>";
                                         echo "<td>";
-                                        for ($z = 0; $z < count($query); $z++) {
+                                        for ($z = 0; $z < count($data); $z++) {
                                             echo $data[$z]['kepercayaan_cf'] . "<br/>";
                                         }
                                         echo "</td>";

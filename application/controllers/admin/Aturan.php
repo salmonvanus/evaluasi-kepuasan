@@ -22,7 +22,7 @@ class Aturan extends CI_Controller
     public function index()
     {
         $data['username']   = $this->session->userdata('username');
-        $data['title']      = 'Aturan | Sistem Informasi Penyakit Sinusitis ';
+        $data['title']      = 'Aturan | Sistem Pakar Penyakit Sinusitis ';
         $data['title_name'] = 'Aturan Dari Metode Foward Chaining';
         $data['user']       = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['footer']     = ' <span class="text-muted d-none d-sm-inline-block float-right"></span>';

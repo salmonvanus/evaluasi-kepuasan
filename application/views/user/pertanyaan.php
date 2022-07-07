@@ -16,7 +16,7 @@
                                     <br />
                                     <div class="form-group">
                                         <label for="username">Jawab :</label>
-                                        <label style="color:red ;">*</label>
+                                        <!-- <label style="color:red ;">*</label> -->
                                         <div class="input-group">
                                             <input type="hidden" name="add_id_gejala[]" value="<?= $row['id_gejala']; ?>" class="form-control">
                                             <input type="hidden" name="add_id_pasien" value="<?= $id_pasien; ?>" class="form-control">
@@ -26,8 +26,8 @@
                                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-map-marker font-16"></i></span>
                                             </div>
                                             <select class="custom-select" name="add_bobot_nilai[]">
-                                                <option selected value="0">Pilih Jawaban...</option>
-                                                <option value=" 0.2">Tidak Tahu</option>
+                                                <option selected value="0">Tidak Tahu...</option>
+                                                <option value=" 0.2">Tidak Yakin</option>
                                                 <option value="0.4">Mungkin</option>
                                                 <option value="0.6">Kemungkinan Besar</option>
                                                 <option value="0.8">Hampir</option>

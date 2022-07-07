@@ -20,7 +20,7 @@ class Profile extends CI_Controller
     {
         //userdata
         $data['username']   = $this->session->userdata('username');
-        $data['title']      = 'Profil | Sistem Informasi Penyakit Sinusitis ';
+        $data['title']      = 'Profil | Sistem Pakar Penyakit Sinusitis ';
         $data['title_name'] = 'Profil';
         $data['user']       = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['footer']     = ' <span class="text-muted d-none d-sm-inline-block float-right"></span>';
@@ -117,7 +117,7 @@ class Profile extends CI_Controller
 
         //userdata
         $data['username']   = $this->session->userdata('username');
-        $data['title']      = 'Profil | Sistem Informasi Penyakit Sinusitis ';
+        $data['title']      = 'Profil | Sistem Pakar Penyakit Sinusitis ';
         $data['title_name'] = 'Profil';
         $data['user']       = $this->db->get_where('user', ['username' => $this->session->userdata('username')])->row_array();
         $data['footer']     = 'salmonvanus.id <span class="text-muted d-none d-sm-inline-block float-right"></span>';

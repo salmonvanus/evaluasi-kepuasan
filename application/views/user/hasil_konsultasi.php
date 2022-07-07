@@ -72,10 +72,10 @@
                                         echo "<td>" . "Apakah saudara/i merasa " . $nama_gejala[0] . "  --  ";
                                         $option = $cf_user[$k];
                                         if ($option == 0) {
-                                            echo " <b style = color:red> TIDAK DIJAWAB </b>";
+                                            echo " <b style = color:red> TIDAK TAHU </b>";
                                         }
                                         if ($option == 0.2) {
-                                            echo " <b style = color:#8A2BE2> TIDAK TAHU </b>";
+                                            echo " <b style = color:#8A2BE2> TIDAK YAKIN </b>";
                                         }
                                         if ($option == 0.4) {
                                             echo " <b style = color:#FFA500> MUNGKIN </b>";
@@ -107,7 +107,7 @@
                     <h5 class="card-header bg-info text-white mt-0">GEJALA TERPILIH</h5>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table mb-0" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                            <table id="" class="table mb-0" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                 <thead class="thead-light">
                                     <tr>
                                         <th>No</th>
@@ -128,7 +128,7 @@
                                             // Menghitung CF Combine
                                             echo "<tr>";
                                             echo "<td>" . $no++ . "</td>";
-                                            echo "<td>" . $nama_gejala[0];
+                                            echo "<td>" . $nama_gejala[0] . "</td>";
                                             echo "</tr>";
                                             // var_dump($data);
                                         }
@@ -251,6 +251,7 @@
                                     $this->db->join('penyakit', 'penyakit.id_penyakit = hasil_analisa_pasien.id_penyakit');
                                     $this->db->where('hasil_analisa_pasien.id_pasien', $id_pasien);
                                     $show_hasil_analisa = $this->db->get()->result_array();
+                                    // var_dump($show_hasil_analisa);
 
                                     $norut = 1;
                                     foreach ($show_hasil_analisa as $baris) {
@@ -296,18 +297,20 @@
                         $this->db->select('*');
                         $this->db->from('hasil_analisa_pasien');
                         $this->db->order_by('hasil_analisa_pasien.kepercayaan_cf', 'DESC');
-                        $this->db->order_by('hasil_analisa_pasien.id_penyakit', 'DESC');
                         $this->db->join('penyakit', 'penyakit.id_penyakit = hasil_analisa_pasien.id_penyakit');
                         $this->db->where('hasil_analisa_pasien.id_pasien', $id_pasien);
                         $this->db->where('hasil_analisa_pasien.kepercayaan_cf', $max);
                         $s_data = $this->db->get()->result_array();
+                        // var_dump($s_data);
                         for ($o = 0; $o < count($s_data); $o++) {
                             $nilai_max = $s_data[$o]['kepercayaan_cf'];
                             // var_dump($nilai_max);
                             if ($nilai_max > 1) {
                                 echo '<h4 style="color:red">' . "<b>" . $s_data[$o]['nama_penyakit'] . "</b>" . "</h4>";
+                                echo '<p class="text-muted mb-4 font-13">' . $s_data[$o]['keterangan_penyakit'] . '</p>';
                             } else {
                                 echo '<h4 style="color:red">' . "<b>" . $s_data[$o]['nama_penyakit'] . "</b>" . "</h4>";
+                                echo '<p class="text-muted mb-4 font-13">' . $s_data[$o]['keterangan_penyakit'] . '</p>';
                             }
                         }
                         ?>
