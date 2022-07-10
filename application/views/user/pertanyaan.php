@@ -20,6 +20,7 @@
                                         <div class="input-group">
                                             <input type="hidden" name="add_id_gejala[]" value="<?= $row['id_gejala']; ?>" class="form-control">
                                             <input type="hidden" name="add_id_pasien" value="<?= $id_pasien; ?>" class="form-control">
+                                            <input type="hidden" name="add_kode_pasien" value="<?= $kode_pasien; ?>" class="form-control">
                                         </div>
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">

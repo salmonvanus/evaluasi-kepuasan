@@ -93,6 +93,7 @@ class Konsultasi extends CI_Controller
         $data['id_gejala']      = $this->input->post('add_id_gejala');
         $data['cf_user']        = $this->input->post('add_bobot_nilai');
         $data['id_pasien']      = $this->input->post('add_id_pasien');
+        $kode_pasien            = $this->input->post('add_kode_pasien');
         $data['gejala']         = $this->Data_gejala->daftar_gejala();
         $data['count_gejala']   = count($data['gejala']);
         $id_pasien              = $this->input->post('add_id_pasien');
@@ -100,19 +101,69 @@ class Konsultasi extends CI_Controller
         $data['cek_pasien']             = $this->db->get_where('gejala_pasien', ['id_pasien' => $id_pasien])->result_array();
         $data['cek_hasil_pasien']       = $this->db->get_where('hasil_analisa_pasien', ['id_pasien' => $id_pasien])->result_array();
 
-        if (count($data['cek_pasien']) > 1) {
-            $this->db->where('id_pasien', $id_pasien);
-            $this->db->from('gejala_pasien');
-            $this->db->delete();
-        }
-        if (count($data['cek_hasil_pasien']) > 1) {
-            $this->db->where('id_pasien', $id_pasien);
-            $this->db->from('hasil_analisa_pasien');
-            $this->db->delete();
-        }
+        // var_dump($data['cf_user']);
+        $count = array_count_values($data['cf_user']);
+        if ($count[0] == 15) {
+            $this->session->set_flashdata('error_empty', "<script> 
+                swal({
+                title: 'Maaf!',
+                text : 'Minimal Pilih 3 Data!',
+                type: 'warning'
+                });
+                </script>");
 
-        // var_dump($data);
+            redirect('Konsultasi/pertanyaan/' . $kode_pasien);
+        }
+        if ($count[0] == 14) {
+            $this->session->set_flashdata('error_empty', "<script> 
+                swal({
+                title: 'Maaf!',
+                text : 'Minimal Pilih 3 Data!',
+                type: 'warning'
+                });
+                </script>");
+
+            redirect('Konsultasi/pertanyaan/' . $kode_pasien);
+        }
+        if ($count[0] == 13) {
+            $this->session->set_flashdata('error_empty', "<script> 
+                swal({
+                title: 'Maaf!',
+                text : 'Minimal Pilih 3 Data!',
+                type: 'warning'
+                });
+                </script>");
+
+            redirect('Konsultasi/pertanyaan/' . $kode_pasien);
+        } else {
+            if (count($data['cek_pasien']) > 1) {
+                $this->db->where('id_pasien', $id_pasien);
+                $this->db->from('gejala_pasien');
+                $this->db->delete();
+            }
+            if (count($data['cek_hasil_pasien']) > 1) {
+                $this->db->where('id_pasien', $id_pasien);
+                $this->db->from('hasil_analisa_pasien');
+                $this->db->delete();
+            }
+        }
+        // print_r(
+        //     $count[0]
+        // );
         // die;
+
+        /////////////////////////////////////////////////////
+
+        // if (count($data['cek_pasien']) > 1) {
+        //     $this->db->where('id_pasien', $id_pasien);
+        //     $this->db->from('gejala_pasien');
+        //     $this->db->delete();
+        // }
+        // if (count($data['cek_hasil_pasien']) > 1) {
+        //     $this->db->where('id_pasien', $id_pasien);
+        //     $this->db->from('hasil_analisa_pasien');
+        //     $this->db->delete();
+        // }
 
         $this->load->view('templates_user/header');
         $this->load->view('templates_user/side_bar');

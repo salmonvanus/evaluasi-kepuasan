@@ -75,6 +75,11 @@
 <script src="<?= base_url('assets/') ?>plugins/tippy/tippy.all.min.js"></script>
 <script src="<?= base_url('assets/') ?>pages/jquery.tooltipster.js"></script>
 
+<!-- Sweet-Alert  -->
+<script src="<?= base_url(); ?>assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
+<script src="<?= base_url(); ?>assets/pages/jquery.sweet-alert.init.js"></script>
+
+
 <!-- App js -->
 <script src="<?= base_url('assets/'); ?>js/app.js"></script>
 
@@ -112,6 +117,17 @@
 <script>
     var resizefunc = [];
 </script>
+
+<?php
+if ($this->session->flashdata('error_empty')) { ?>
+    <script>
+        swal({
+            title: 'Maaf!',
+            text: 'Gagal Diproses, Minimal Jawab 3 Pertanyaan!',
+            type: 'warning'
+        })
+    </script>
+<?php } ?>
 
 </body>
 
