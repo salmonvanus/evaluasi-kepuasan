@@ -41,6 +41,9 @@ $route['admin/periode-kuesioner']   = 'admin/c_periode_kuesioner';
 // admin analisis
 $route['admin/analisis']            = 'admin/c_analisis';
 
+// error
+$route['error']                     = 'Error_empty';
+
 $route['default_controller']        = 'c_landing';
-$route['404_override']              = '';
+$route['404_override']              = 'Error_404';
 $route['translate_uri_dashes']      = FALSE;

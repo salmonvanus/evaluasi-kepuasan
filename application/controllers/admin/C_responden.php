@@ -57,6 +57,10 @@ class C_responden extends CI_Controller
 
     public function lihatRespondenPengguna($kode_responden)
     {
+        $cek_responden = $this->db->get_where('biodata_responden', ['kode_responden' => $kode_responden])->row_array();
+        if ($cek_responden == null) {
+            redirect('error');
+        } else {
         $data['username']   = $this->session->userdata('username');
         $data['parent']     = 'Responden';
         $data['display']    = 'Responden';
@@ -72,9 +76,10 @@ class C_responden extends CI_Controller
 
         $data['responden']                   = $this->tabel_biodata_responden->getRespondenByKodeResponden($kode_responden);
         $data['detail_responden_harapan']    = $this->tabel_responden_harapan->getByKodeResponden($kode_responden);
-        $data['detail_responden_persepspi']  = $this->tabel_responden_persepsi->getByKodeResponden($kode_responden);
+        $data['detail_responden_persepsi']  = $this->tabel_responden_persepsi->getByKodeResponden($kode_responden);
 
         // var_dump($data);
         $this->load->view('admin/detail_responden_pengguna', $data);
+        }
     }
 }

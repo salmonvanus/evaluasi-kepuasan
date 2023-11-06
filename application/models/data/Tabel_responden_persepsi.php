@@ -35,7 +35,8 @@ class Tabel_responden_persepsi extends CI_Model
 
     function getByKodeResponden($kode_responden)
     {
-        $this->db->where('responden_persepsi', $kode_responden);
+        $this->db->join('data_pertanyaan','data_pertanyaan.id = data_responden_persepsi.id_pertanyaan_persepsi', 'left');
+        $this->db->where('data_responden_persepsi.responden_persepsi', $kode_responden);
         return $this->db->get($this->table)->result_array();
     }
 }

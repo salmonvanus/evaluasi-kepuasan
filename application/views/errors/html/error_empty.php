@@ -113,8 +113,8 @@
 									<div class="error-content text-center">
 										<h2 class="text-primary mb-0">Oppsss</h2>
 										<h1 class="mt-0">404!</h1>
-										<h4 class="text-primary">Maaf halaman tidak tersedia.</h4><br>
-										<a class="btn btn-primary mb-5 waves-effect waves-light" href="<?= base_url('beranda'); ?>">Kembali Ke Halaman Awal</a>
+										<h4 class="text-primary">Maaf data tidak tersedia.</h4><br>
+										<a class="btn btn-primary mb-5 waves-effect waves-light" href="<?= base_url('admin/responden'); ?>">Kembali Ke Halaman Awal</a>
 									</div>
 								</div>
 								<!--end col-->

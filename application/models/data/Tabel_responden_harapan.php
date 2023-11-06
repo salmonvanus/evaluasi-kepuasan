@@ -35,7 +35,8 @@ class Tabel_responden_harapan extends CI_Model
 
     function getByKodeResponden($kode_responden)
     {
-        $this->db->where('responden_harapan', $kode_responden);
+        $this->db->join('data_pertanyaan','data_pertanyaan.id = data_responden_harapan.id_pertanyaan_harapan', 'left');
+        $this->db->where('data_responden_harapan.responden_harapan', $kode_responden);
         return $this->db->get($this->table)->result_array();
     }
 }
