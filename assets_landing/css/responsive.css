@@ -1,0 +1,133 @@
+/**
+ * File Name: responsive.css
+ */
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 01 ) - Responsive Specifications
+ *	-------------------------------------------------------------------------------
+ *
+ *  This part contains the responsive modifications for small devices widths
+ *
+ *	------
+ *
+ *  It has the following code:
+ *
+ *	   |
+ *	   |-->  [ 01 ] - Width From 1200px to 0
+ *	   |-->  [ 02 ] - Width From 992px to 0
+ *	   |-->  [ 03 ] - Width From 768px to 0
+ *	   |-->  [ 04 ] - Width From 480px to 0
+ *	   |-->  [ 05 ] - Width From 320px to 0
+ *	   |-->  [ 06 ] - Height Form 768px to 0
+ *	   |-->  [ 05 ] - Height Form Maximmum to 768px
+ *	   |-->  [ 08 ] - Height Form Maximmum to 900px
+ *
+ */
+/*  [ 01 ] - Width From 1200px to 0
+ ===================================== */
+@media (max-width: 1200px) {
+  /* Header */
+  #header {
+    text-align: left; }
+    #header,
+    #header #header-wrap {
+      min-height: 80px;
+      height: auto; }
+    #header #header-wrap {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10; }
+    #header .logo,
+    #header .header-btn,
+    #header .mobile-menu-btn {
+      top: 40px; }
+    #header .main-menu > li > a {
+      line-height: 80px; }
+  .header-btn {
+    margin-left: 20px; }
+  .main-menu {
+    left: 0;
+    display: none; }
+  #mobile-menu {
+    margin-top: 10px; }
+    #mobile-menu .mobile-menu {
+      text-align: left; }
+  .mobile-menu-btn {
+    display: inline-block; } }
+
+/*  [ 02 ] - Width From 992px to 0
+ ==================================== */
+@media (max-width: 992px) {
+  /* Slider */
+  .fullscreen {
+    height: auto !important; }
+  .banner-slider {
+    height: 650px !important; }
+  .slide-content h1 {
+    font-size: 50px;
+    line-height: 65px; }
+  /* Page Title */
+  #page-title {
+    text-align: center; }
+    #page-title .breadcrumb {
+      position: initial;
+      margin-top: 20px; }
+  /* Appointment Form */
+  .box-appointment-form {
+    margin-top: 60px; }
+  /* Pricing Plans */
+  .pricing-table .pt-column {
+    margin-bottom: 40px; }
+  .pricing-table [class*="col-"]:last-child .pt-column {
+    margin-bottom: 0px; }
+  /* Portfolio Single */
+  .portfolio-single-meta {
+    margin-bottom: 30px; }
+  /* Footer Mini */
+  #footer-mini {
+    text-align: center; }
+    #footer-mini .social-icons {
+      float: none;
+      margin-top: 5px;
+      top: 0; }
+  .copyrights-message {
+    float: none;
+    display: block;
+    top: 0; }
+  /* Scroll Top */
+  .scroll-top {
+    display: none !important; } }
+
+/*  [ 03 ] - Width From 768px to 0
+==================================== */
+@media (max-width: 768px) {
+  /* Banner Slider */
+  .banner-slider {
+    height: 700px !important; }
+  .slide-content h1 {
+    font-size: 40px;
+    line-height: 55px; } }
+
+/*  [ 04 ] - Width From 480px to 0
+==================================== */
+@media (max-width: 480px) {
+  /* Header */
+  .header-btn {
+    display: none; }
+  /* Banner Slider */
+  .slide-content h1 {
+    font-size: 30px;
+    line-height: 45px; }
+  /* Our Services */ }
+
+/*  [ 05 ] - Width From 320px to 0
+==================================== */
+/*  [ 06 ] - Height From 768px to 0
+===================================== */
+/*  [ 07 ] - Height From Maximmum to 768px
+============================================ */
+/*  [ 08 ] - Height From Maximmum to 900px
+============================================ */

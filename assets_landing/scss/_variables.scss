@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------------
+
+// 	variables.less
+
+// -----------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------
+// 	Base Colors
+// -----------------------------------------------------------------
+
+$theme-color:                   #ff4444;
+
+$body-color:                    #999;
+
+$dark-color:					#222;
+
+$link-color: 					#ff3f47;
+$link-hover-color: 				#222;
+$link-focus-color: 				#ff3f47;
+
+$heading-color:                 #222;
+
+$highlight-color:		 		#000;
+$highlight-bg-color: 			#c0eaf5;
+
+
+
+//  ----------------------------------------------------------------
+// 	Line Height Variables
+// -----------------------------------------------------------------
+
+$line-height-base:              1.7;
+$line-height-content:           1.8;
+$line-height-heading:           1.4;
+
+
+//  ----------------------------------------------------------------
+// 	Font Families
+// -----------------------------------------------------------------
+
+$body-font:                     "Open Sans", "Cairo", sans-serif;
+$heading-font:                  "Ubuntu", "Droid Arabic Kufi", sans-serif;
+$secondary-font:                "Ubuntu", "Droid Arabic Kufi", sans-serif;
+
+
+//  ----------------------------------------------------------------
+// 	Font Sizes
+// -----------------------------------------------------------------
+
+$font-size-base:                14px;
+$font-size-h1:                  32px;
+$font-size-h2:                  28px;
+$font-size-h3:                  24px;
+$font-size-h4:                  20px;
+$font-size-h5:                  16px;
+$font-size-h6:                  14px;

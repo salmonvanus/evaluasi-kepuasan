@@ -1,32 +1,47 @@
-<div class="page-content">
-    <div class="container-fluid">
+<!DOCTYPE html>
+<html lang="en">
+<?php $this->load->view('part-admin/head'); ?>
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <img class="d-block img-fluid" src="<?= base_url('assets/images/beranda/'); ?>Beranda-1.jpg" alt="First slide">
+
+<body>
+
+    <?php $this->load->view('part-admin/topbar'); ?>
+    <?php $this->load->view('part-admin/title'); ?>
+
+    <div class="page-wrapper">
+        <div class="page-wrapper-inner">
+
+            <?php $this->load->view('part-admin/sidebar'); ?>
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="mt-0 header-title">Beranda</h4>
+                                    <p class="text-muted mb-0 font-13">Selamat Datang <b><?= $profil['name']; ?></b>. </p>
+ 
                                 </div>
+                                <!--end card-body-->
                             </div>
+                            <!--end card-->
                         </div>
-                        <!--end card-body-->
+                        <!--end col-->
                     </div>
-                    <!--end card-->
-                </div>
+                    <!--end row-->
+                </div><!-- container -->
+
+                <?php $this->load->view('part-admin/foot'); ?>
             </div>
-            <!--end row-->
-
-            <!-- end container fluid -->
-
-            <footer class="footer text-center text-sm-left">
-                <?= $footer; ?>
-            </footer>
         </div>
-        <!-- end page content -->
     </div>
-    <!--end page-wrapper-inner -->
-</div>
-<!-- end page-wrapper -->
+
+    <?php $this->load->view('part-admin/script'); ?>
+    <?php $this->load->view('part-admin/alert'); ?>
+
+
+</body>
+
+</html>

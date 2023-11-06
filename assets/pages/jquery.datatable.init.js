@@ -6,32 +6,7 @@
 
 
 $(document).ready(function() {
-    $('#datatable').DataTable({
-        "language": {
-            "decimal": "",
-            "emptyTable": "Tidak ada data yang tersedia",
-            "info": "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
-            "infoEmpty": "Data yang dicari tidak ditemukan",
-            "infoFiltered": "(difilter dari _MAX_ total data)",
-            "infoPostFix": "",
-            "thousands": ",",
-            "lengthMenu": "Tampilkan _MENU_ data",
-            "loadingRecords": "Memuat...",
-            "processing": "Sedang Memproses...",
-            "search": "Pencarian:",
-            "zeroRecords": "Tidak ada data yang ditamplkan",
-            "paginate": {
-                "first": "Pertama",
-                "last": "Terakhir",
-                "next": "Berikutnya",
-                "previous": "Sebelumnya"
-            },
-            "aria": {
-                "sortAscending": ": Aktifkan untuk urutkan kolom secara ascending",
-                "sortDescending": ": Aktifkan untuk urutkan kolom secara descending"
-            }
-        }
-    });
+    $('#datatable').DataTable();
 
     $(document).ready(function() {
         $('#datatable2').DataTable();

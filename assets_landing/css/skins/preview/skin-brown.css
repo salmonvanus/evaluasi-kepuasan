@@ -1,0 +1,222 @@
+/* =====================================================================
+ *   "Brown" Skin
+ * =================================================================== */
+/* Links Colors */
+a {
+  color: #da6540; }
+
+a:focus {
+  color: #da6540; }
+
+p a:hover {
+  border-color: #da6540; }
+
+/* Headings */
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #da6540; }
+
+/* Text Colored */
+.colored {
+  color: #da6540; }
+
+/* Scroll Top */
+.scroll-top,
+.scroll-top:focus {
+  background: #da6540; }
+
+/* Buttons */
+.btn.colorful {
+  background: #da6540;
+  border-color: #da6540; }
+
+.btn.transparent-colorful {
+  color: #da6540;
+  border-color: #da6540; }
+
+.btn.hover-colorful:hover {
+  background: #da6540;
+  border-color: #da6540; }
+
+.btn.hover-transparent-colorful:hover {
+  color: #da6540;
+  border-color: #da6540; }
+
+/* Scroll Progress */
+#scroll-progress {
+  background: #da6540; }
+
+/* Forms */
+input[type="submit"],
+input[type="submit"].form-control,
+input[type="submit"],
+input[type="submit"].form-control {
+  background: #da6540; }
+
+/* Header Contact Info */
+.header-contact-info li i {
+  background: #da6540; }
+
+/* Header Social Icons */
+.header-social-icons .social-icons a {
+  color: #da6540; }
+
+/* Main Menu */
+.main-menu > li > a.current, .main-menu > li:hover > a,
+.main-menu > li > a:hover {
+  color: #da6540; }
+
+.main-menu ul.sub-menu li a:hover, .main-menu ul.sub-menu li:hover > a {
+  color: #da6540; }
+
+.main-menu.sf-arrows li > a.sf-with-ul:focus:after,
+.main-menu.sf-arrows li:hover > a.sf-with-ul:after,
+.main-menu.sf-arrows .sfHover > a.sf-with-ul:after {
+  color: #da6540; }
+
+/* Mobile Menu */
+.mobile-menu li:hover > a {
+  color: #da6540; }
+
+.mobile-menu > li > a:hover, .mobile-menu > li > a.current {
+  color: #da6540; }
+
+.mobile-menu.sf-arrows > li > a.sf-with-ul:focus:after,
+.mobile-menu.sf-arrows > li:hover > a.sf-with-ul:after,
+.mobile-menu.sf-arrows > .sfHover > a.sf-with-ul:after {
+  color: #da6540; }
+
+.mobile-menu.sf-arrows li > a.sf-with-ul:focus:after,
+.mobile-menu.sf-arrows li:hover > a.sf-with-ul:after,
+.mobile-menu.sf-arrows .sfHover > a.sf-with-ul:after {
+  color: #da6540; }
+
+/* Banner Slider */
+.banner-slider .owl-nav [class*="owl-"] {
+  background: #da6540; }
+
+.banner-slider .owl-dots .owl-dot.active span, .banner-slider .owl-dots .owl-dot.active:hover span {
+  background: #da6540; }
+
+/* Section Title */
+.section-title h6 {
+  color: #da6540; }
+
+/* About Us */
+.box-info-1.colorful-bg {
+  background: #da6540; }
+
+/* Featured Projects */
+.featured-projects-slider .owl-dots .owl-dot.active span,
+.featured-projects-slider .owl-dots .owl-dot.active:hover span {
+  background: #da6540; }
+
+/* Why Choose Us */
+.box-info-2 .box-icon {
+  background: #da6540; }
+
+.video-preview .btn-video {
+  color: #da6540; }
+
+/* Lists */
+.list li::before {
+  color: #da6540; }
+
+/* Box Preview */
+.box-preview .box-content .meta li i {
+  color: #da6540; }
+
+/* Rating */
+.rating i {
+  color: #da6540; }
+
+/* Our Works */
+.portfolio-categories li a.active,
+.portfolio-categories li a.active:hover {
+  background: #da6540; }
+
+.portfolio-items-wrap .portfolio-item .overlay .overlay-inner .sub-title {
+  color: #da6540; }
+
+/* Our Team */
+.team-member .box-img .overlay .overlay-inner .sub-title {
+  color: #da6540; }
+
+.team-slider .owl-dots .owl-dot.active span,
+.team-slider .owl-dots .owl-dot.active:hover span {
+  background: #da6540; }
+
+/* Clients Testmonials */
+.testmonial-single .ts-person {
+  color: #da6540; }
+
+.testmonial-single .ts-person a:hover {
+  color: #da6540; }
+
+.testmonials-slider .owl-nav [class*="owl-"] {
+  background: #da6540; }
+
+.testmonials-slider .owl-dots .owl-dot.active span,
+.testmonials-slider .owl-dots .owl-dot.active:hover span {
+  background: #da6540; }
+
+/* Contact Us */
+.box-contact-info i {
+  color: #da6540; }
+
+/* CTA Title 1 */
+.cta-title .colored {
+  color: #da6540 !important; }
+
+.cta-title h1::after {
+  background: #da6540; }
+
+/* Popular Categories */
+.portfolio-categories li a:hover {
+  color: #da6540; }
+
+.portfolio-categories li a::before {
+  background: #da6540; }
+
+.portfolio-items-wrap .portfolio-item .overlay > i {
+  background: #da6540; }
+
+.portfolio-items-wrap .portfolio-item .overlay .overlay-inner::before {
+  background: #da6540; }
+
+.portfolio-items-wrap .portfolio-item .overlay .sub-title {
+  color: #da6540; }
+
+.portfolio-single-preview > .project-close:hover {
+  color: #da6540; }
+
+.portfolio-single-slider .owl-nav [class*="owl-"] {
+  background: #da6540; }
+
+.portfolio-single-slider .controls span {
+  color: #da6540; }
+
+.ps-fixedwidth-intro .description .project-close:hover {
+  color: #da6540; }
+
+.box-info .box-content h5 .numb-count {
+  color: #da6540; }
+
+.box-info .box-content .meta a:hover {
+  color: #da6540; }
+
+/* Clients */
+.clients-slider .owl-nav [class*="owl-"] {
+  background: #da6540; }
+
+.clients-slider .owl-dots .owl-dot.active span,
+.clients-slider .owl-dots .owl-dot.active:hover span {
+  background: #da6540; }
+
+/* Footer */
+.copyrights-message span {
+  color: #da6540; }

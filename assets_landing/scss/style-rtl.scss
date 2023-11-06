@@ -1,0 +1,733 @@
+/**
+ * File Name: style-rtl.css
+ *
+ * This file contains all "Right to Left" needed
+ * adds and changes. It's imported under style.css
+ * in HTML files.
+ *
+ */
+
+
+/**
+ * styles-rtl.css file is divided as the following:
+ *
+ * ( 01 ) - style.css
+ * ( 02 ) - responsive.css
+ *
+ */
+
+
+// Imports ( Others at Bottom, perhaps! )
+// ==========================================
+
+@import "bootstrap-rtl";
+
+// ==========================================
+
+
+
+ /**
+  *	-------------------------------------------------------------------------------
+  *	( 01 ) - style.css
+  *	-------------------------------------------------------------------------------
+  *
+  *  This part contains all applied codes in style.css file
+  *
+  *	------
+  *
+  *  style.css divided to the following sections:
+  *
+  *	   |
+  *	   |-->  ( 01 ) - General Basics
+  *	   |-->  ( 02 ) - Form Settings
+  *	   |-->  ( 03 ) - Header
+  *	   |-->  ( 04 ) - Banner
+  *	   |-->  ( 05 ) - Content
+  *	   |-->  ( 06 ) - Single Pages
+  *	   |-->  ( 07 ) - Footer
+  *
+  */
+
+
+
+@import "_variables";
+
+/*  [ 01 ] - General Basics
+============================= */
+
+.mfp-counter {
+	direction: ltr;
+}
+
+/* Body */ 
+body {
+	line-height: $line-height-content;
+	font-weight: 600;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -1px;
+}
+
+h4,
+h5,
+h6 {
+	letter-spacing: -0.3px;
+}
+
+h1 { font-size: $font-size-h1 + 2 }
+h2 { font-size: $font-size-h2 + 2 }
+h3 { font-size: $font-size-h3 + 2 }
+h4 { font-size: $font-size-h4 + 2 }
+h5 { font-size: $font-size-h5 + 2 }
+h6 { font-size: $font-size-h6 + 2 }
+
+/* Buttons */
+.btn {
+	&.large {
+		font-size: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	&.medium {
+		font-size: 14px;
+	}
+	
+	&.small {
+		font-size: 13px;
+	}
+}
+
+
+/* Page Title */
+.breadcrumb {
+	right: auto;
+	left: 15px;
+}
+
+.breadcrumb li+li::before {
+	padding: 0 0 0 4px;
+}
+
+
+
+/*  [ 02 ] - Form Settings
+============================ */
+
+
+
+/*  [ 03 ] - Header
+===================== */
+
+/* Header Contact Info */
+.header-contact-info {
+	li {
+		margin-right: 0;
+
+		+ li {
+			margin: 0 15px 0 0;
+		}
+
+		i {
+			margin: 0 0 0 8px;
+		}
+	}
+
+}
+
+/* Header Social Icons */
+.header-social-icons {
+	float: left;
+
+	span {
+		margin: 0 0 0 10px;
+	}
+}
+
+.social-icons li + li {
+	margin: 0 4px 0 0;
+}
+
+/* Logo */
+.logo {
+	float: right;
+
+	&.logo-text {
+		text-align: right;
+	}
+}
+
+/* Main Menu */
+.main-menu {
+	letter-spacing: -0.2px;
+}
+
+.main-menu li a {
+	font-weight: 700;
+}
+
+.main-menu > li {
+	float: right;
+}
+
+.main-menu > li > a {
+	font-size: 14px;
+}
+
+.main-menu ul.sub-menu {
+	left: auto;
+	right: 0;
+	text-align: right;
+}
+
+.main-menu ul.sub-menu ul {
+	left: auto;
+	right: 100%;
+}
+
+.main-menu.sf-arrows > li > a.sf-with-ul::after {
+	margin: 0 6px 0 0;
+}
+
+.main-menu.sf-arrows ul.sub-menu a.sf-with-ul::after {
+	right: auto;
+	left: 15px;
+	top: 14px;
+	content: "\f104";
+}
+
+/* Header Button */
+.header-btn {
+	float: left;
+}
+
+/* Mobile Menu */
+#mobile-menu {
+  .ss-content {
+    padding: 0 0 0 5px;
+  }
+}
+
+.mobile-menu {
+	letter-spacing: -0.2px;
+	margin: 0 auto -5px;
+}
+
+.mobile-menu ul {
+	padding: 0 15px 0 0;
+}
+
+.mobile-menu li a {
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+.mobile-menu.sf-arrows > li > a.sf-with-ul::after {
+	right: auto;
+	left: 0;
+	content: "\f104";
+}
+
+.mobile-menu.sf-arrows ul.sub-menu a.sf-with-ul::after {
+	right: auto;
+	left: 0;
+}
+
+/* Simple Scroll */
+.ss-wrapper {
+	margin: 0 -18px 0 0;
+	float: right;
+}
+
+.ss-content {
+	right: auto;
+	left: -18px;
+}
+
+.ss-scroll {
+	right: auto !important;
+	left: 0 !important;
+}
+
+
+/*  [ 04 ] - Banner
+===================== */
+ 
+.slide-content {
+	.description {
+		line-height: 1.9;
+	}
+} 
+
+
+/*  [ 05 ] - Content
+====================== */
+.section-title h2::before {
+	left: auto;
+	right: 0;
+}
+
+.section-title p {
+	font-size: 14px;
+}
+
+/* About Us */
+.box-info-1 .box-icon {
+	float: right;
+	margin: 0 0 0 23px;
+}
+
+/* Featured Projects */
+.box-preview-2 .box-content h5 span {
+	float: left;
+}
+
+/* Why Choose Us */
+.box-info-2 .box-icon {
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+.btn-video {
+	font-size: 12px;
+
+	i {
+		text-indent: -3px;
+	}
+}
+
+/* Popular Packages */
+.rating {
+	right: auto;
+	left: 30px;
+}
+
+/* Our Works */
+.portfolio-categories li a {
+	font-size: 14px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+.portfolio-items-wrap .portfolio-item .overlay .overlay-inner {
+	left: auto;
+	right: 30px;
+}
+
+.portfolio-items-wrap .portfolio-item .overlay .overlay-inner .sub-title {
+	&::before,
+	&::after {
+		right: 0;
+	}
+
+	&::before {
+		bottom: -10px;
+	}
+}
+
+.portfolio-items-wrap .portfolio-item .overlay .overlay-inner h4 {
+	font-weight: 700;
+}
+
+.portfolio-single-loader {
+	margin-right: -16px;
+}
+
+.portfolio-items-wrap .loadmore-pi {
+	right: auto;
+	left: 15px;
+}
+
+.portfolio-items-wrap .loadmore-pi.loading .loader,
+.portfolio-items-wrap .loadmore-pi .loader {
+	float: left;
+}
+
+.portfolio-items-wrap .loadmore-pi.loading .loader {
+	margin: 0 10px 0 0;
+}
+
+.portfolio-single-slider .controls {
+	span + span {
+		margin: 0 2px 0 0;
+	}
+
+	.prev i,
+	.next i {
+		transform: rotate(180deg);
+	}
+}
+
+.portfolio-single-slider .controls span + span {
+}
+
+.ps-fixedwidth-intro .portfolio-single-preview .controls span:last-child {
+	float: left;
+}
+
+.ps-fixedwidth-intro .portfolio-single-preview .controls span:first-child {
+	float: right;
+}
+
+.ps-fixedwidth-intro .description {
+	margin: 0 -30px 0 0;
+	border-left: 1px solid #ebeef0;
+	border-right: none;
+
+	.section-title {
+		text-align: right;
+
+		h2::before {
+			left: auto;
+			right: 0;
+		}
+
+		h2::after {
+			left: auto;
+			right: 20px;
+		}		
+	}
+
+	.project-close {
+		right: auto;
+		left: -1px;		
+	}
+}
+
+.list li::before {
+	margin: 0 0 0 10px;
+}
+
+/* Portfolio Single Page */
+.portfolio-single-meta > li .psm-content .jssocials .jssocials-shares .jssocials-share + .jssocials-share {
+	margin: 0 4px 0 0;
+}
+
+/* Our Team */
+.team-member .box-img .overlay .overlay-inner {
+	left: auto;
+	right: 30px;
+}
+
+.team-member .box-img .overlay .overlay-inner .sub-title::before {
+	right: 0;
+	bottom: -10px;
+}
+
+/* Clients Testmonials */
+.testmonial-single .ts-content {
+
+}
+
+.testmonial-single .ts-img i {
+	margin: 0 25px 0 0;
+}
+
+.testmonial-single .ts-person {
+	i {
+		margin: 0 0 0 2px;
+	}
+
+	a {
+		margin-right: 3px;
+	}
+}
+
+/* Our Clients */
+.client-single img {
+	left: -50%;
+	transform: translate(50%, -50%);
+}
+
+/* Contact Us */
+#contact-form label.error {
+	font-weight: 600;
+	font-size: 11px;
+}
+
+.cf-notifications-cont {
+	padding-right: 46px;
+	padding-left: 15px;
+}
+
+.cf-error-icon, 
+.cf-success-icon {
+	left: auto;
+	right: 10px;
+}
+
+/*  [ 06 ] - Single Pages
+=========================== */
+
+/* Portfolio Single */
+.portfolio-single-meta>li .title {
+	float: right;
+}
+
+.portfolio-single-meta>li i.fa-heart {
+	margin: 0 0 0 5px;
+}
+
+.portfolio-single-meta .social-icons li+li {
+	margin: 0 10px 0 0;
+}
+
+.portfolio-single-paging .prev {
+	float: right;
+	padding: 0 45px 0 40px;
+	text-align: right;
+
+	i {
+		left: auto;
+		right: 0;
+	}
+
+	&:hover {
+		i {
+			left: auto;
+			right: -1px;
+		}
+	}
+}
+
+.portfolio-single-paging .next {
+	float: left;
+	padding: 0 40px 0 45px;
+	text-align: left;
+
+	i {
+		right: auto;
+		left: 0;
+	}
+
+	&:hover {
+		i {
+			right: auto;
+			left: -1px;
+		}
+	}
+}
+
+.portfolio-single-paging .prev,
+.portfolio-single-paging .next {
+	i {
+		transform: rotate(180deg);
+	}
+}
+
+/*  [ 07 ] - Footer
+===================== */
+
+#footer-mini .social-icons {
+	float: left;
+}
+
+/* Style Switcher */
+.style-switcher {
+	.ss-wrapper {
+		margin: 0 0 0 -18px;
+		float: left;
+	}
+
+	.ss-content {
+		right: -17px;
+		left: auto;
+	}
+
+	.ss-scroll {
+		right: 0 !important;
+		left: auto !important;
+	}
+}
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 02 ) - responsive.css
+ *	-------------------------------------------------------------------------------
+ *
+ *  This part contains the responsive modifications for small devices widths
+ *
+ *	------
+ *
+ *  It has the following code:
+ *
+ *	   |
+ *	   |-->  [ 1 ] - Width From 1200px to 0
+ *	   |-->  [ 2 ] - Width From 992px to 0
+ *	   |-->  [ 3 ] - Width From 768px to 0
+ *	   |-->  [ 4 ] - Width From 480px to 0
+ *	   |-->  [ 5 ] - Width From 320px to 0
+ *	   |-->  [ 6 ] - Height Form 768px to 0
+ *	   |-->  [ 5 ] - Height Form Maximmum to 768px
+ *	   |-->  [ 8 ] - Height Form Maximmum to 900px
+ *
+ */
+
+
+/**
+ *  [ 1 ] - Width From 1200px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 1200px) {
+
+	/* Header */
+	#header {
+		text-align: right;
+	}
+
+	#mobile-menu .mobile-menu {
+		text-align: right;
+	}
+
+	.mobile-menu-btn {
+		float: left;
+	}
+
+	.header-btn {
+		float: left;
+		margin: 0 20px 0 0;
+	}
+
+
+} // < 1200px width
+
+
+/**
+ *  [ 2 ] - Width From 992px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 992px) {
+
+	/* Slider */
+	.banner-slider ul li {
+		background-size: initial;
+	}
+
+	.banner-center-box {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.slide-content h1 {
+		line-height: 71px;
+	}
+
+	/* Our Adventures */
+	.ps-fixedwidth-intro .description {
+		margin-right: 0;
+		border-right: 1px solid #ebeef0;
+		border-left: 1px solid #ebeef0;
+	}
+
+	/* Footer Mini */
+	.copyrights-message,
+	.made-by {
+		text-align: center;
+	}
+
+	.made-by {
+		margin-top: 5px;
+	}
+
+
+} // < 992px width
+
+
+/**
+ *  [ 3 ] - Width From 768px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 768px) {
+	
+	/* Header */
+	.header-social-icons {
+		float: none;
+	}
+	
+	/* Banner */
+	.slide-content h1 {
+		line-height: 61px;
+	}
+
+} // < 768px width
+
+
+/**
+ *  [ 4 ] - Width From 480px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 480px) {
+	
+	/* Banner */
+	.slide-content h1 {
+		line-height: 51px;
+	}
+
+} // < 480px width
+
+
+/**
+ *  [ 5 ] - Width From 320px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 320px) {
+
+} // < 320px width
+
+
+
+/**
+ *  [ 6 ] - Height From 768px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-height : 768px) {
+
+
+
+} // < 768px height
+
+
+/**
+ *  [ 5 ] - Height From Maximmum to 768px
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (min-height : 768px) {
+
+
+
+} // > 768px height
+
+
+/**
+ *  [ 8 ] - Height From Maximmum to 900px
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (min-height : 900px) {
+
+
+} // > 900px height
+
+
+

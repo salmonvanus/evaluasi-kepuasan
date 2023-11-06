@@ -1,54 +1,46 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-/*
-| -------------------------------------------------------------------------
-| URI ROUTING
-| -------------------------------------------------------------------------
-| This file lets you re-map URI requests to specific controller functions.
-|
-| Typically there is a one-to-one relationship between a URL string
-| and its corresponding controller class/method. The segments in a
-| URL normally follow this pattern:
-|
-|	example.com/class/method/id/
-|
-| In some instances, however, you may want to remap this relationship
-| so that a different class/function is called than the one
-| corresponding to the URL.
-|
-| Please see the user guide for complete details:
-|
-|	https://codeigniter.com/user_guide/general/routing.html
-|
-| -------------------------------------------------------------------------
-| RESERVED ROUTES
-| -------------------------------------------------------------------------
-|
-| There are three reserved routes:
-|
-|	$route['default_controller'] = 'welcome';
-|
-| This route indicates which controller class should be loaded if the
-| URI contains no data. In the above example, the "welcome" class
-| would be loaded.
-|
-|	$route['404_override'] = 'errors/page_missing';
-|
-| This route will tell the Router which controller/method to use if those
-| provided in the URL cannot be matched to a valid route.
-|
-|	$route['translate_uri_dashes'] = FALSE;
-|
-| This is not exactly a route, but allows you to automatically route
-| controller and method names that contain dashes. '-' isn't a valid
-| class or method name character, so it requires translation.
-| When you set this option to TRUE, it will replace ALL dashes in the
-| controller and method URI segments.
-|
-| Examples:	my-controller/index	-> my_controller/index
-|		my-controller/my-method	-> my_controller/my_method
-*/
-$route['default_controller'] = 'Landing';
-$route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+// user-menu
+$route['beranda']                   = 'c_landing';
+$route['kuesioner']                 = 'c_kuesioner';
+$route['kuesioner/view']['POST']    = 'c_kuesioner/view';
+$route['kuesioner/input-kuesioner'] = 'c_kuesioner/inputKuesioner';
+
+// auth
+$route['login']                     = 'auth/c_login';
+$route['logout']                    = 'auth/c_login/logout';
+$route['cek_login']                 = 'auth/c_login/cek_login';
+
+// admin home
+$route['admin/beranda']             = 'admin/c_beranda';
+
+// admin profil
+$route['admin/profil']              = 'auth/c_profil';
+$route['admin/profil/get/(:num)']   = 'auth/c_profil/get/$1';
+$route['admin/profil/edit_profil']  = 'auth/c_profil/edit_profil';
+$route['admin/profil/changepassword'] = 'auth/c_profil/changepassword';
+
+// admin pengguna
+$route['admin/pengguna']             = 'auth/c_pengguna';
+
+// admin kuesioner
+$route['admin/pertanyaan']           = 'admin/c_pertanyaan';
+$route['admin/pertanyaan/create']    = 'admin/c_pertanyaan/create';
+$route['admin/pertanyaan/get/(:num)']= 'admin/c_pertanyaan/get/$1';
+$route['admin/pertanyaan/edit']      = 'admin/c_pertanyaan/edit';
+
+// admin responden                  
+$route['admin/responden']               = 'admin/c_responden';
+$route['admin/filter-data']['POST']     = 'admin/c_responden/fetchData';
+$route['admin/lihat-responden-pengguna/(:any)'] = 'admin/c_responden/lihatRespondenPengguna/$1';
+
+// admin periode                
+$route['admin/periode-kuesioner']   = 'admin/c_periode_kuesioner';
+
+// admin analisis
+$route['admin/analisis']            = 'admin/c_analisis';
+
+$route['default_controller']        = 'c_landing';
+$route['404_override']              = '';
+$route['translate_uri_dashes']      = FALSE;
