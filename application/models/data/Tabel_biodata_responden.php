@@ -54,4 +54,10 @@ class Tabel_biodata_responden extends CI_Model
         $this->db->where('kode_responden', $kode_responden);
         return $this->db->get($this->table)->row_array();
     }
+
+    function getRespondenByIdLayanan($id_layanan)
+    {
+        $this->db->where($id_layanan);
+        return $this->db->get($this->table)->result_array();
+    }
 }

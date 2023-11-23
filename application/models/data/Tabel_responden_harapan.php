@@ -39,4 +39,12 @@ class Tabel_responden_harapan extends CI_Model
         $this->db->where('data_responden_harapan.responden_harapan', $kode_responden);
         return $this->db->get($this->table)->result_array();
     }
+
+    function sum_nilai_harapan()
+    {
+        $this->db->select('SUM(data_responden_harapan.nilai_harapan) as nilai');
+        $this->db->join('data_pertanyaan', 'data_responden_harapan.id_pertanyaan_harapan = data_pertanyaan.id');
+        $this->db->group_by('data_pertanyaan.id', 'ASC');
+        return $this->db->get($this->table)->result_array();
+    }
 }

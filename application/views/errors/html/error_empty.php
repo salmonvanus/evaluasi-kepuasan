@@ -130,7 +130,7 @@
 		</div><!-- container -->
 
 		<footer class="footer text-center text-sm-left">
-			Evaluasi Kepuasan | Kejaksaan Negeri Tomohon <span class="text-muted d-none d-sm-inline-block float-right"></span><img src="assets/images/logo_cleverlabs.png" alt="logo-small" style="width: 4%" class="logo-sm">
+			Evaluasi Kepuasan | Kejaksaan Negeri Tomohon <span class="text-muted d-none d-sm-inline-block float-right"></span>
 		</footer>
 	</div>
 	<!-- end page content -->

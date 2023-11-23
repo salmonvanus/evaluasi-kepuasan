@@ -49,9 +49,16 @@ class C_pertanyaan extends CI_Controller
 
     public function create()
     {
-        $data['id_layanan']         = $this->input->post('add_id_layanan');
-        $data['jenis_pertanyaan']   = $this->input->post('add_jenis_pertanyaan');
-        $data['pertanyaan']         = $this->input->post('add_pertanyaan');
+        
+        $data = array(
+            'id_layanan' => $this->input->post('add_id_layanan'),
+            'jenis_pertanyaan' => $this->input->post('add_jenis_pertanyaan'),
+            'pertanyaan' => $this->input->post('add_pertanyaan')
+        );
+
+        foreach ($data['jenis_pertanyaan'] as $index => $value) {
+            $data['id_layanan'][$index] = $data['id_layanan'][0];
+        }
 
         $this->tabel_pertanyaan->create($data);
         $this->session->set_flashdata('success', "Data Berhasil Ditambah!");

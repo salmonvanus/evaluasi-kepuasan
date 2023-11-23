@@ -6,7 +6,6 @@
 	<meta content="github.com/mrskl21" name="author" />
 
 	<!-- App favicon -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	
 	<link rel="shortcut icon" href="<?= base_url(); ?>assets/images/logo/logo-kejari-web.png" />
 
@@ -45,5 +44,6 @@
 	<link href="<?= base_url(); ?>assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
 	<link href="<?= base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css" />
 	<style id="clock-animations"></style>
+
 
 </head>

@@ -22,9 +22,28 @@ class Tabel_pertanyaan extends CI_Model
         return $this->db->get($this->table)->row_array();
     }
 
+    // public function create($data)
+    // {
+    //     $this->db->insert($this->table, $data);
+    //     return $this->db->affected_rows() > 0;
+    // }
+
     public function create($data)
     {
-        $this->db->insert($this->table, $data);
+        // Loop through the arrays and insert data into the database
+        foreach ($data['id_layanan'] as $index => $id_layanan) {
+            $insert_data = array(
+                'id_layanan' => $id_layanan,
+                'jenis_pertanyaan' => $data['jenis_pertanyaan'][$index],
+                'pertanyaan' => $data['pertanyaan'][$index]
+            );
+
+            // Insert data into the database
+            $this->db->insert($this->table, $insert_data);
+        }
+
+        // Check for successful insertion
+        return $this->db->affected_rows() > 0;
     }
 
     function edit($id, $data)

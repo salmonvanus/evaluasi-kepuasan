@@ -39,4 +39,13 @@ class Tabel_responden_persepsi extends CI_Model
         $this->db->where('data_responden_persepsi.responden_persepsi', $kode_responden);
         return $this->db->get($this->table)->result_array();
     }
+
+
+    function sum_nilai_persepsi()
+    {
+        $this->db->select('SUM(data_responden_persepsi.nilai_persepsi) as nilai');
+        $this->db->join('data_pertanyaan', 'data_responden_persepsi.id_pertanyaan_persepsi = data_pertanyaan.id');
+        $this->db->group_by('data_pertanyaan.id', 'ASC');
+        return $this->db->get($this->table)->result_array();
+    }
 }

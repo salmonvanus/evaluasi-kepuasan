@@ -39,10 +39,12 @@ $route['admin/lihat-responden-pengguna/(:any)'] = 'admin/c_responden/lihatRespon
 $route['admin/periode-kuesioner']   = 'admin/c_periode_kuesioner';
 
 // admin analisis
-$route['admin/analisis']            = 'admin/c_analisis';
+$route['admin/analisis']                            = 'admin/c_analisis';
+$route['admin/analisis/hasil-analisis']['POST']     = 'admin/c_analisis/show_hasil_analisis';
 
 // error
 $route['error']                     = 'Error_empty';
+$route['destroy_session']           = 'C_session_destroy';
 
 $route['default_controller']        = 'c_landing';
 $route['404_override']              = 'Error_404';

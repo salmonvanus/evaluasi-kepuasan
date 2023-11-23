@@ -13,6 +13,8 @@ class C_beranda extends CI_Controller
         $this->load->helper(array('file', 'url', 'form'));
         $this->load->library('form_validation');
 
+        session_start();
+
         if (!($this->session->userdata('username'))) {
             redirect('login');
         }

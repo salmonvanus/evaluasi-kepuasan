@@ -6,15 +6,19 @@
 
 
 $(document).ready(function() {
-    $('#datatable').DataTable();
+    $('#example').datatable({
+        scrollX: true
+    });
 
     $(document).ready(function() {
-        $('#datatable2').DataTable();
+        $('#example2').DataTable({
+            scrollX: true
+        });
     });
 
     //Buttons examples
     var table = $('#datatable-buttons').DataTable({
-        lengthChange: false,
+        lengthChange: true,
         buttons: ['copy', 'excel', 'pdf', 'colvis']
     });
 
